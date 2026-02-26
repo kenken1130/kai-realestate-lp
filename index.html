@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kai — あなた専属のAI参謀</title>
-<meta name="description" content="月額10万円→モニター価格5万円。連続起業家の判断力 × AIの実行力。経営者の最強の右腕。先着20組。">
-<meta property="og:title" content="Kai — AI × 経営者の経験で、最強の右腕">
-<meta property="og:description" content="月額10万円→モニター価格5万円。10億円調達の経験を持つ起業家とAI参謀がセット。先着20組。">
+<title>Kai — 飲食店の最強の右腕</title>
+<meta name="description" content="飲食店オーナー向けAIアシスタント。SNS運用、メニュー作成、口コミ対応、求人、経理まで月額5万円で全部おまかせ。先着20店舗。">
+<meta property="og:title" content="Kai — 飲食店の最強の右腕。SNS・メニュー・求人、全部AIにおまかせ。">
+<meta property="og:description" content="月額10万円→モニター価格5万円。バイト1人の1/3以下で、24時間働くスタッフ。先着20店舗。">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -16,12 +16,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Noto Sans JP','Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
 a{color:var(--blue);text-decoration:none}
-
-/* Fade-in animation */
 .fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
 .fade-in.visible{opacity:1;transform:translateY(0)}
-
-/* Hero */
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(32,128,224,.08) 0%,transparent 60%);animation:pulse 8s ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
@@ -32,23 +28,17 @@ a{color:var(--blue);text-decoration:none}
 .hero .sub strong{color:var(--text)}
 .cta-btn{display:inline-block;background:var(--gradient);color:#fff;font-weight:700;font-size:1.1rem;padding:1rem 3rem;border-radius:60px;transition:all .3s;box-shadow:0 4px 30px rgba(32,128,224,.4)}
 .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(32,128,224,.6)}
-
-/* Section */
 section{padding:5rem 1.5rem}
 .container{max-width:1000px;margin:0 auto}
 .section-title{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:900;text-align:center;margin-bottom:.8rem}
 .section-sub{text-align:center;color:var(--text2);margin-bottom:3rem;font-size:1rem}
 .accent{color:var(--blue)}
 .gold{color:var(--gold)}
-
-/* Problems */
 .problems{background:var(--bg2)}
-.problem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.problem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem}
 .problem-card{background:var(--bg3);border:1px solid #222;border-radius:16px;padding:2rem;text-align:center}
 .problem-card .icon{font-size:2.5rem;margin-bottom:1rem}
 .problem-card p{color:var(--text2);font-size:.95rem}
-
-/* Results */
 .results-header{text-align:center;margin-bottom:1rem}
 .results-header .big-number{font-size:clamp(3rem,8vw,5rem);font-weight:900;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .category-label{font-size:.9rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin:2.5rem 0 1rem;padding-left:.5rem;border-left:3px solid var(--gold)}
@@ -58,17 +48,12 @@ section{padding:5rem 1.5rem}
 .result-card .emoji{font-size:1.5rem;margin-bottom:.5rem}
 .result-card h4{font-size:1rem;margin-bottom:.3rem}
 .result-card p{font-size:.85rem;color:var(--text2)}
-.result-card a{font-size:.8rem}
-
-/* Service */
 .service{background:var(--bg2)}
 .service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-bottom:3rem}
 .service-item{display:flex;align-items:flex-start;gap:1rem;background:var(--bg3);padding:1.5rem;border-radius:12px}
 .service-item .icon{font-size:1.5rem;flex-shrink:0;margin-top:.2rem}
 .service-item h4{font-size:.95rem;margin-bottom:.3rem}
 .service-item p{font-size:.85rem;color:var(--text2)}
-
-/* Pricing */
 .pricing-card{max-width:500px;margin:0 auto;background:linear-gradient(145deg,#111,#1a1a1a);border:2px solid var(--gold);border-radius:24px;padding:3rem 2rem;text-align:center;position:relative;overflow:hidden}
 .pricing-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--blue),var(--gold))}
 .pricing-card .price{font-size:clamp(2.5rem,6vw,3.5rem);font-weight:900;margin:.5rem 0}
@@ -79,15 +64,11 @@ section{padding:5rem 1.5rem}
 .compare-row{display:flex;justify-content:space-between;align-items:center;font-size:.9rem}
 .compare-row.old{color:var(--text2);text-decoration:line-through}
 .compare-row.highlight{color:var(--gold);font-weight:700;font-size:1.1rem}
-
-/* Flow */
 .flow-steps{display:flex;flex-direction:column;gap:2rem;max-width:600px;margin:0 auto}
 .flow-step{display:flex;gap:1.5rem;align-items:flex-start}
 .flow-step .num{flex-shrink:0;width:50px;height:50px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.2rem}
 .flow-step .content h4{margin-bottom:.3rem}
 .flow-step .content p{font-size:.9rem;color:var(--text2)}
-
-/* FAQ */
 .faq{background:var(--bg2)}
 .faq-list{max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
 .faq-item{background:var(--bg3);border:1px solid #222;border-radius:12px;overflow:hidden}
@@ -97,14 +78,10 @@ section{padding:5rem 1.5rem}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 1.5rem}
 .faq-item.open .faq-a{max-height:300px;padding:0 1.5rem 1.2rem}
 .faq-a p{font-size:.9rem;color:var(--text2);line-height:1.8}
-
-/* Final CTA */
 .final-cta{text-align:center;padding:6rem 1.5rem;background:radial-gradient(ellipse at center,rgba(32,128,224,.1) 0%,transparent 70%)}
 .final-cta h2{font-size:clamp(1.5rem,4vw,2.5rem);font-weight:900;margin-bottom:1rem}
 .final-cta p{color:var(--text2);margin-bottom:2rem;font-size:1.1rem}
 .slots{font-size:1.2rem;color:var(--gold);font-weight:700;margin-bottom:2rem}
-
-/* Footer */
 footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px solid #1a1a1a}
 </style>
 </head>
@@ -113,12 +90,12 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <!-- Hero -->
 <section class="hero">
   <div class="hero-content fade-in">
-    <div class="badge">🔥 先着20組 モニター価格 50%OFF</div>
-    <h1>AI × 経営者の経験。<br>最強の右腕。</h1>
+    <div class="badge">🍽 先着20店舗 モニター価格 50%OFF</div>
+    <h1>料理に集中してください。<br>残りは、全部やります。</h1>
     <p class="sub">
-      月額10万円 → <strong>モニター価格 5万円</strong>で、<strong>連続起業家</strong>と<strong>AI参謀</strong>がセットに。<br>
-      10億円調達・17事業の経験に裏打ちされた<strong>人間の判断力</strong>と、<br>
-      24時間稼働するAIの<strong>圧倒的な実行力</strong>。
+      SNS投稿、メニュー作成、口コミ対応、求人、経理…<br>
+      <strong>飲食店の雑務</strong>を、<strong>AI + 経営のプロ</strong>が<strong>月5万円</strong>で全部引き受けます。<br>
+      <strong>バイト1人の1/3以下</strong>で、<strong>24時間働くスタッフ</strong>が手に入ります。
     </p>
     <a href="https://t.me/kenken" class="cta-btn">無料相談する →</a>
   </div>
@@ -128,21 +105,23 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="problems">
   <div class="container">
     <h2 class="section-title fade-in">こんな悩み、ありませんか？</h2>
-    <p class="section-sub fade-in">忙しい経営者が本業に集中できない理由</p>
+    <p class="section-sub fade-in">忙しい飲食店オーナーが本業（料理）に集中できない理由</p>
     <div class="problem-grid">
-      <div class="problem-card fade-in"><div class="icon">🔍</div><p>リサーチに<br>時間を取られる</p></div>
-      <div class="problem-card fade-in"><div class="icon">📄</div><p>資料作成が<br>いつも後回し</p></div>
-      <div class="problem-card fade-in"><div class="icon">💡</div><p>アイデアはあるが<br>形にできない</p></div>
-      <div class="problem-card fade-in"><div class="icon">🤷</div><p>人を雇うほどじゃないけど<br>手が足りない</p></div>
+      <div class="problem-card fade-in"><div class="icon">📸</div><p>SNSの更新が<br>止まっている</p></div>
+      <div class="problem-card fade-in"><div class="icon">📋</div><p>メニューやPOPを<br>作る時間がない</p></div>
+      <div class="problem-card fade-in"><div class="icon">⭐</div><p>Googleの口コミに<br>返信できていない</p></div>
+      <div class="problem-card fade-in"><div class="icon">👥</div><p>求人しても<br>人が来ない</p></div>
+      <div class="problem-card fade-in"><div class="icon">🧾</div><p>経理・確定申告が<br>面倒すぎる</p></div>
+      <div class="problem-card fade-in"><div class="icon">🌏</div><p>インバウンド客に<br>対応できない</p></div>
     </div>
   </div>
 </section>
 
 <!-- Why Different -->
-<section class="why-different" style="padding:5rem 1.5rem">
+<section style="padding:5rem 1.5rem">
   <div class="container">
-    <h2 class="section-title fade-in">AIツールとは、<span class="gold">決定的に</span>違う。</h2>
-    <p class="section-sub fade-in">ChatGPTは誰でも使える。でも「使いこなす人間」で結果は変わる。</p>
+    <h2 class="section-title fade-in">ただのAIツールとは、<span class="gold">決定的に</span>違う。</h2>
+    <p class="section-sub fade-in">ChatGPTは便利。でも「飲食店のことがわかる人間」が使いこなすから結果が出る。</p>
 
     <div style="display:flex;flex-direction:column;gap:1.5rem;max-width:600px;margin:0 auto">
       <div class="fade-in" style="background:var(--bg2);border:1px solid #222;border-radius:16px;padding:2rem;position:relative;overflow:hidden">
@@ -152,27 +131,24 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem">
           <li style="font-size:.9rem;color:var(--text)">⚡ 17事業を立ち上げた<strong>経営判断力</strong></li>
           <li style="font-size:.9rem;color:var(--text)">⚡ NFT+株式で<strong>10億円調達</strong>の実績</li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ 事業計画・資金調達・法務の<strong>実戦経験</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのビジネスに合わせた<strong>戦略的助言</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 集客・マーケ・経営の<strong>実戦経験</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのお店に合わせた<strong>戦略的助言</strong></li>
         </ul>
       </div>
-
       <div style="text-align:center;font-size:1.5rem;color:var(--gold)">×</div>
-
       <div class="fade-in" style="background:var(--bg2);border:1px solid #222;border-radius:16px;padding:2rem;position:relative;overflow:hidden">
         <div style="position:absolute;top:0;left:0;width:100%;height:3px;background:var(--gradient)"></div>
         <div style="font-size:1.2rem;margin-bottom:.5rem">🤖 <strong>Kai</strong>（AI参謀）</div>
-        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">Claude搭載 / 24時間稼働</p>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">最新AI搭載 / 24時間稼働</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem">
-          <li style="font-size:.9rem;color:var(--text)">⚡ リサーチ・資料作成を<strong>秒速で実行</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ LP・アプリ・Botを<strong>即日開発</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ タスク管理・メール監視を<strong>24h自動化</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ あなたの情報を学習し<strong>日々進化</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ SNS投稿文・メニュー・POPを<strong>秒速で作成</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 口コミ返信・求人文面を<strong>即生成</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 売上分析・原価計算を<strong>自動化</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのお店を学習し<strong>日々進化</strong></li>
         </ul>
       </div>
     </div>
-
-    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--gold);font-weight:700;font-size:1.1rem">人間の判断力 × AIの実行力 = 最強の右腕</p>
+    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--gold);font-weight:700;font-size:1.1rem">人間の判断力 × AIの実行力 = 飲食店の最強の右腕</p>
   </div>
 </section>
 
@@ -180,78 +156,71 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section style="background:var(--bg2);padding:5rem 1.5rem">
   <div class="container">
     <h2 class="section-title fade-in">実際の<span class="accent">やり取り</span>イメージ</h2>
-    <p class="section-sub fade-in">Telegramで話しかけるだけ。こんな感じで動きます。</p>
+    <p class="section-sub fade-in">LINEのように話しかけるだけ。こんな感じで動きます。</p>
 
-    <!-- Chat tabs -->
     <div style="display:flex;gap:.5rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap" class="fade-in">
-      <button class="chat-tab active" data-chat="1" style="background:var(--blue);color:#fff;border:none;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">💼 資料作成</button>
-      <button class="chat-tab" data-chat="2" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🔍 リサーチ</button>
-      <button class="chat-tab" data-chat="3" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📊 戦略相談</button>
-      <button class="chat-tab" data-chat="4" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🛠 開発</button>
-      <button class="chat-tab" data-chat="5" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">☀️ 朝ブリーフィング</button>
+      <button class="chat-tab active" data-chat="1" style="background:var(--blue);color:#fff;border:none;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📸 SNS運用</button>
+      <button class="chat-tab" data-chat="2" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📋 メニュー作成</button>
+      <button class="chat-tab" data-chat="3" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">⭐ 口コミ対応</button>
+      <button class="chat-tab" data-chat="4" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">👥 求人</button>
+      <button class="chat-tab" data-chat="5" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🌏 多言語</button>
     </div>
 
-    <!-- Chat windows -->
     <div style="max-width:500px;margin:0 auto">
       <div class="chat-phone fade-in" style="background:#0e1621;border-radius:20px;padding:0;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)">
-        <!-- Phone header -->
         <div style="background:#17212b;padding:1rem 1.2rem;display:flex;align-items:center;gap:.8rem;border-bottom:1px solid #1e2c3a">
           <div style="width:40px;height:40px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:1.2rem">⚡</div>
-          <div><div style="font-weight:600;font-size:.9rem">Kai × あなた</div><div style="font-size:.75rem;color:#6d8da6">オンライン</div></div>
+          <div><div style="font-weight:600;font-size:.9rem">Kai × あなたのお店</div><div style="font-size:.75rem;color:#6d8da6">オンライン</div></div>
         </div>
 
-        <!-- Chat body -->
         <div style="padding:1rem;min-height:380px">
 
-          <!-- Chat 1: 資料作成 -->
+          <!-- Chat 1: SNS -->
           <div class="chat-content" data-chat="1" style="display:flex;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">明日の投資家MTG用のピッチデッキ作って。事業概要はNotionにあるやつ使って</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ Notionの事業概要ベースで作る。<br><br>構成案：<br>1. 課題と市場<br>2. ソリューション<br>3. トラクション<br>4. ビジネスモデル<br>5. チーム<br>6. 資金使途<br><br>HTMLスライドで15分で仕上げる。URL共有するね。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">それでいい、頼んだ🙏</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">完成したよ 👇<br><br>🔗 https://example.github.io/pitch-deck/<br><br>スマホでもPCでもプレゼンできる。修正あれば言って。</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 依頼から15分で納品</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">今日のランチの写真送るから、インスタ用の投稿文作って🍝</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">📷 [パスタの写真]</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">美味しそう！⚡ 投稿文3パターン作ったよ👇<br><br>①「もちもち生パスタ×濃厚トマトソース🍅 シェフが毎朝手打ちしてます。ランチ限定980円」<br><br>②「今日のランチはこれ！手打ちパスタの贅沢トマトソース。テラス席で召し上がれ☀️」<br><br>③「【本日のおすすめ】生パスタ好きに届け。もちもち食感がたまらない一皿🍝」<br><br>#渋谷ランチ #パスタ #手打ちパスタ #渋谷グルメ #ランチ限定</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">①でお願い！</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 写真送って1分で投稿文完成</div>
           </div>
 
-          <!-- Chat 2: リサーチ -->
+          <!-- Chat 2: Menu -->
           <div class="chat-content" data-chat="2" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">渋谷エリアのパーソナルジムの競合調査してほしい。価格帯と特徴まとめて</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">渋谷エリア、了解。調べてくる ⚡</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">まとめた 👇<br><br>📊 渋谷パーソナルジム 15社比較<br><br>■ 価格帯<br>・高価格帯（月15万〜）: 3社<br>・中価格帯（月5-15万）: 8社<br>・低価格帯（〜月5万）: 4社<br><br>■ 空白ポイント<br>→ 「経営者特化」は0社。狙い目。<br><br>Notionに詳細レポート入れたよ。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">完璧👏 そのまま事業計画に使うわ</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 競合15社を30分で調査完了</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">来週から夏メニュー始めるんだけど、POPのテキスト考えて。冷製パスタと夏野菜カレー</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">夏メニュー、いいね！⚡<br><br>🍝 冷製パスタ用POP：<br>「ひんやり、つるっと。<br>トマトとバジルの冷製パスタ<br>暑い日にぴったりの一皿。 ¥1,100」<br><br>🍛 夏野菜カレー用POP：<br>「ゴロッと夏野菜。<br>スパイス香る、元気が出るカレー<br>ナス・ズッキーニ・パプリカ ¥1,000」<br><br>A4サイズのデザインデータも作る？印刷してすぐ使えるようにするよ。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">デザインも頼む！</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ メニューPOP テキスト+デザインまで対応</div>
           </div>
 
-          <!-- Chat 3: 戦略相談 -->
+          <!-- Chat 3: Reviews -->
           <div class="chat-content" data-chat="3" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">今月キャッシュやばい。売上立てる方法なんかない？</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">現状整理するね。<br><br>💰 今の月次：<br>・固定収入: 会計ソフト 30-70万<br>・パイプライン: VEXUM 3社商談中<br><br>🎯 即効性ある打ち手：<br><br>①【今週】既存ネットワークに1on1営業（5件）<br>→ VEXUM月20万 × 2社 = +40万<br><br>②【来週】AI勉強会 → サブスク転換<br>→ 月5万 × 5人 = +25万<br><br>③【今月】代理店に紹介料15%設定<br>→ 他人が売ってくれる仕組み<br><br>リスト作る？</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">②やろう。勉強会の集客どうする？</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">X告知文とLP、今から作るよ ⚡<br>ターゲットリストも30分で出す。</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 相談→具体的アクションプランまで5分</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">Googleに口コミ入ってた。「味は美味しいけど待ち時間が長い」って。返信文考えて</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ 誠実に対応する返信作ったよ👇<br><br>「この度はご来店ありがとうございます。お料理を気に入っていただけたとのこと、大変嬉しく思います。<br><br>お待たせしてしまった点、大変申し訳ございませんでした。現在、ピーク時間帯のオペレーション改善に取り組んでおります。<br><br>次回はよりスムーズにご案内できるよう努めますので、またのご来店をお待ちしております。」<br><br>これでOK？修正あれば言ってね。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">完璧👏 そのまま貼る！</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 口コミ対応、30秒で返信文完成</div>
           </div>
 
-          <!-- Chat 4: 開発 -->
+          <!-- Chat 4: Hiring -->
           <div class="chat-content" data-chat="4" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">うちのバーのシフト管理、紙でやってるんだけどアプリにできない？</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">できるよ ⚡ こんな機能でどう？<br><br>📱 スタッフ側：<br>・スマホから希望シフト提出<br>・確定シフト確認<br><br>👑 マネージャー側：<br>・全員の希望を一覧表示<br>・AIが最適シフト自動生成<br>・ワンタップで公開<br><br>今から作る？</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">マジで！？作って！</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">できた 🎉<br><br>🔗 https://example.github.io/shift-manager/<br><br>スマホで開いてみて。スタッフにURL送るだけで使える。費用ゼロ。</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 相談から1時間でアプリ完成・公開</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">キッチンスタッフ1人募集したい。求人サイトに出す文章考えて</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ お店の特徴に合わせて作ったよ👇<br><br>━━━━━━━━━━━<br>【キッチンスタッフ募集】<br>渋谷の人気イタリアン🍕<br>━━━━━━━━━━━<br><br>✅ 未経験OK・丁寧に教えます<br>✅ まかない無料（スタッフに大好評！）<br>✅ シフト柔軟・週2日〜OK<br>✅ 駅チカ徒歩3分<br><br>時給: 1,200円〜（経験者優遇）<br>時間: 11:00-15:00 / 17:00-22:00<br><br>「料理が好き」その気持ちだけで十分です。<br>一緒に美味しいを届けませんか？<br>━━━━━━━━━━━<br><br>タウンワーク・バイトル両方に使える形にしたよ。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">ありがとう！面接の質問リストも欲しい</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 求人文面+面接準備まで一気に対応</div>
           </div>
 
-          <!-- Chat 5: 朝ブリーフィング -->
+          <!-- Chat 5: Multi-language -->
           <div class="chat-content" data-chat="5" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">☀️ おはようございます！<br>今日のブリーフィングです。<br><br>📅 <strong>本日の予定</strong><br>・10:00 投資家MTG（Zoom）<br>・14:00 クライアント訪問（渋谷）<br>・18:00 懇親会（六本木）<br><br>✅ <strong>タスク（期限今日）</strong><br>・事業計画書の最終版提出<br>・契約書の確認・返送<br><br>📧 <strong>重要メール</strong><br>・銀行から融資審査結果 → 要返信<br>・弁護士から契約書修正 → 確認済み<br><br>💡 投資家MTGの資料、昨日の修正反映済みです。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">助かる！銀行のメール返信のドラフト作って</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">ドラフト作ったよ 👇<br><br>件名: Re: 融資審査結果について<br><br>内容確認して、OKならそのまま送信するね。</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 毎朝8時に自動配信。聞かなくても届く。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">最近外国人のお客さん増えてきた。英語と中国語のメニュー作れる？</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">もちろん！⚡ 今のメニュー教えてくれたら翻訳するよ。<br><br>ただの直訳じゃなくて：<br>・料理の魅力が伝わる説明文つき<br>・アレルギー表記も追加<br>・写真番号で指差し注文もできる形式<br><br>PDF納品するから、印刷してすぐ使えるよ。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">メニュー写真送る！韓国語もいける？</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">韓国語も対応できるよ 🇰🇷<br>英・中・韓の3言語メニュー、明日には納品するね。</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 多言語メニュー、翌日納品</div>
           </div>
 
         </div>
       </div>
     </div>
-
-    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--text2);font-size:.9rem">※ 実際のやり取りを元に再構成しています</p>
+    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--text2);font-size:.9rem">※ 実際の利用イメージを元に構成しています</p>
   </div>
 </section>
 
@@ -259,99 +228,32 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="results">
   <div class="container">
     <div class="results-header fade-in">
-      <div class="big-number">15</div>
-      <h2 class="section-title">の成果を、<span class="gold">たった2日</span>で。</h2>
-      <p class="section-sub">実際のクライアント事例です</p>
+      <h2 class="section-title">飲食店で、<span class="gold">こんなこと</span>ができます</h2>
+      <p class="section-sub">話しかけるだけで、すぐに実行</p>
     </div>
 
-    <div class="category-label fade-in">🛠 プロダクト開発</div>
+    <div class="category-label fade-in">📣 集客・SNS</div>
     <div class="result-grid">
-      <div class="result-card fade-in">
-        <div class="emoji">📱</div>
-        <h4>シフト管理アプリ</h4>
-        <p>バー・ラウンジ向け。AIスケジューリング機能付き。即日完成。</p>
-        <a href="https://kenken1130.github.io/shift-manager/" target="_blank">デモを見る →</a>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">🤖</div>
-        <h4>NOMI Bot MVP</h4>
-        <p>Telegram AIマッチングbot。対話型オンボーディング、プッシュ通知、管理機能。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">🎤</div>
-        <h4>AI勉強会スライド</h4>
-        <p>インタラクティブHTMLスライド。URL共有で即プレゼン。</p>
-        <a href="https://kenken1130.github.io/ai-seminar-slides/" target="_blank">デモを見る →</a>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">⛳</div>
-        <h4>投資家向けピッチデッキ</h4>
-        <p>PDF→インタラクティブHTML。アニメーション付き。</p>
-        <a href="https://kenken1130.github.io/golfin-pitch-deck/" target="_blank">デモを見る →</a>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">🎨</div>
-        <h4>ブランドステッカー制作</h4>
-        <p>複数デザインパターン。コンビニ印刷対応データ。</p>
-      </div>
+      <div class="result-card fade-in"><div class="emoji">📸</div><h4>インスタ投稿文作成</h4><p>写真を送るだけ。キャプション+ハッシュタグを3パターン提案。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📍</div><h4>Googleマップ対策（MEO）</h4><p>口コミ返信、ビジネスプロフィール投稿文、写真選定のアドバイス。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🎫</div><h4>クーポン・キャンペーン企画</h4><p>雨の日クーポン、リピーター特典、季節イベントの企画立案。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📝</div><h4>食べログ・ホットペッパー文面</h4><p>店舗紹介文、メニュー説明、口コミへの返信を作成。</p></div>
     </div>
 
-    <div class="category-label fade-in">📊 経営・戦略</div>
+    <div class="category-label fade-in">🛠 業務効率化</div>
     <div class="result-grid">
-      <div class="result-card fade-in">
-        <div class="emoji">📈</div>
-        <h4>6ヶ月売上予測モデル</h4>
-        <p>MRRロードマップ策定。月460万達成シナリオ。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">🎯</div>
-        <h4>送客戦略設計</h4>
-        <p>マーケファネル設計、数値目標、KPI設定。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">🔎</div>
-        <h4>競合調査レポート</h4>
-        <p>業界分析、ポジショニングマップ、Notion納品。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">⚖️</div>
-        <h4>法務チェック</h4>
-        <p>AI画像利用・条例確認。リスク整理。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">📝</div>
-        <h4>訴訟対応</h4>
-        <p>訴状分析、答弁書ドラフト作成。</p>
-      </div>
+      <div class="result-card fade-in"><div class="emoji">📱</div><h4>シフト管理アプリ</h4><p>スタッフがスマホでシフト提出。自動で最適シフト生成。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🎨</div><h4>メニュー・POP作成</h4><p>季節メニュー、日替わり、おすすめPOP。印刷対応データで納品。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📦</div><h4>在庫・仕入れ管理</h4><p>発注リスト作成、仕入れ先比較、ロス率の分析。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🌏</div><h4>多言語メニュー</h4><p>英語・中国語・韓国語。料理説明+アレルギー表記つき。</p></div>
     </div>
 
-    <div class="category-label fade-in">🔧 インフラ・自動化</div>
+    <div class="category-label fade-in">📊 経営サポート</div>
     <div class="result-grid">
-      <div class="result-card fade-in">
-        <div class="emoji">🔗</div>
-        <h4>Google API連携</h4>
-        <p>Calendar / Tasks / Gmail。OAuth構築。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">🗄️</div>
-        <h4>Notion DB 5個構築</h4>
-        <p>タスク管理・営業PL・ナレッジベース・代理店管理。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">☀️</div>
-        <h4>朝ブリーフィング自動配信</h4>
-        <p>毎朝8時。スケジュール+タスク+メール要約。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">💬</div>
-        <h4>Telegram 13グループ自動応答</h4>
-        <p>グループ別モデル最適化。コスト60%削減。</p>
-      </div>
-      <div class="result-card fade-in">
-        <div class="emoji">🏗️</div>
-        <h4>開発支援</h4>
-        <p>Figma連携、3エージェントQAパイプライン、Visual QA。</p>
-      </div>
+      <div class="result-card fade-in"><div class="emoji">📈</div><h4>売上分析・レポート</h4><p>日次/月次の売上推移、客単価分析、曜日別トレンド。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🧮</div><h4>原価計算・FL比率管理</h4><p>メニュー別原価率、食材費の最適化提案。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🧾</div><h4>経理・確定申告準備</h4><p>レシート整理のテンプレ、経費分類、税理士連携サポート。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🏪</div><h4>出店・事業計画</h4><p>2号店の立地調査、損益シミュレーション、融資資料作成。</p></div>
     </div>
   </div>
 </section>
@@ -359,19 +261,19 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <!-- Service -->
 <section class="service">
   <div class="container">
-    <h2 class="section-title fade-in">Kaiにできること</h2>
-    <p class="section-sub fade-in">AIの実行力 + 経営者の判断力で、ただの「作業代行」とは次元が違う</p>
+    <h2 class="section-title fade-in">Kaiにおまかせできること</h2>
+    <p class="section-sub fade-in">飲食店に特化した8つのサポート</p>
     <div class="service-list">
-      <div class="service-item fade-in"><div class="icon">🔍</div><div><h4>リサーチ・調査</h4><p>競合分析、市場調査、技術調査。必要な情報を即座に。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">📊</div><div><h4>資料・スライド作成</h4><p>ピッチデッキ、事業計画、プレゼン資料。HTML/PDF対応。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🌐</div><div><h4>LP・Webサイト制作</h4><p>このLPもKaiが作りました。即日公開。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">✅</div><div><h4>タスク・プロジェクト管理</h4><p>Notion連携。進捗追跡、期限管理、朝の自動ブリーフィング。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">📧</div><div><h4>メール・コミュニケーション</h4><p>Gmail監視、重要メール通知、返信ドラフト作成。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">📈</div><div><h4>事業戦略・財務</h4><p>売上予測、KPI設計、マーケ戦略、資金計画。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">⚖️</div><div><h4>法務・リスク管理</h4><p>契約チェック、法務調査、訴訟対応サポート。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🤖</div><div><h4>プロダクト開発</h4><p>MVP開発、Bot構築、API連携、自動化。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📸</div><div><h4>SNS運用・投稿代行</h4><p>Instagram、TikTok、X。写真を送るだけで投稿文+ハッシュタグ完成。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📍</div><div><h4>Googleマップ・口コミ対策</h4><p>口コミ返信、MEO対策、ビジネスプロフィール最適化で集客UP。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🎨</div><div><h4>メニュー・POP・チラシ作成</h4><p>季節メニュー、日替わり、宴会プラン。デザインデータで納品。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">👥</div><div><h4>求人・採用サポート</h4><p>求人広告文面、面接質問リスト、採用基準の設計。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🌏</div><div><h4>多言語メニュー対応</h4><p>英語・中国語・韓国語。インバウンド客の売上を取りこぼさない。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🧾</div><div><h4>経理・確定申告サポート</h4><p>経費整理、帳簿テンプレ、税理士との連携サポート。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📈</div><div><h4>売上分析・原価管理</h4><p>売上レポート、原価率計算、利益改善の提案。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🤖</div><div><h4>アプリ・システム開発</h4><p>予約システム、シフト管理アプリ、LINE公式連携。</p></div></div>
     </div>
-    <p style="text-align:center;color:var(--text2);font-size:.9rem" class="fade-in">※ 専用Telegramグループ（あなた + 小松 + Kai）で24時間対応<br>小松が戦略・方向性を判断し、Kaiが即座に実行。このコンビが強い。</p>
+    <p style="text-align:center;color:var(--text2);font-size:.9rem" class="fade-in">※ 専用チャットグループ（あなた + 小松 + Kai）で24時間対応<br>小松が戦略を判断し、Kaiが即座に実行。このコンビが強い。</p>
   </div>
 </section>
 
@@ -379,15 +281,16 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="pricing">
   <div class="container">
     <h2 class="section-title fade-in">料金</h2>
-    <p class="section-sub fade-in">人間のアシスタントの<span class="gold">1/10以下</span></p>
+    <p class="section-sub fade-in"><span class="gold">バイト1人の1/3以下</span>で、24時間働くスタッフ</p>
     <div class="pricing-card fade-in">
-      <div class="limit-badge">🔥 先着20組 モニター価格</div>
+      <div class="limit-badge">🍽 先着20店舗 モニター価格</div>
       <p style="font-size:1.2rem;color:var(--text2);text-decoration:line-through;margin-bottom:.3rem">通常価格 ¥100,000/月</p>
       <div class="price" style="color:var(--gold)">¥50,000<span>/月</span></div>
       <p class="tax">税込 ¥55,000（50%OFF）</p>
       <div class="compare">
-        <div class="compare-row old">人間の秘書・アシスタント — 月30〜50万円</div>
-        <div class="compare-row old">フリーランス外注 — 案件ごとに数万〜数十万円</div>
+        <div class="compare-row old">アルバイト1人 — 月15〜25万円</div>
+        <div class="compare-row old">SNS代行会社 — 月10〜30万円</div>
+        <div class="compare-row old">コンサル — 月20〜50万円</div>
         <div class="compare-row highlight">Kai — <s>月額10万円</s> → モニター価格 月額5万円 ⚡</div>
       </div>
       <a href="https://t.me/kenken" class="cta-btn" style="width:100%;text-align:center">無料相談する →</a>
@@ -396,18 +299,22 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 </section>
 
 <!-- Flow -->
-<section class="flow" style="background:var(--bg2)">
+<section style="background:var(--bg2);padding:5rem 1.5rem">
   <div class="container">
     <h2 class="section-title fade-in">導入の流れ</h2>
     <p class="section-sub fade-in">最短その日からスタート</p>
     <div class="flow-steps">
       <div class="flow-step fade-in">
         <div class="num">1</div>
-        <div class="content"><h4>無料相談</h4><p>Telegramで気軽にご相談。あなたの課題をヒアリングします。</p></div>
+        <div class="content"><h4>無料相談</h4><p>お店の課題をヒアリング。「こんなことできる？」何でも聞いてください。</p></div>
       </div>
       <div class="flow-step fade-in">
         <div class="num">2</div>
-        <div class="content"><h4>本契約スタート</h4><p>月額課金開始。1ヶ月単位でいつでも解約OK、縛りなし。</p></div>
+        <div class="content"><h4>お試しスタート</h4><p>実際に使ってみてください。「これは使える」と実感してから本契約。</p></div>
+      </div>
+      <div class="flow-step fade-in">
+        <div class="num">3</div>
+        <div class="content"><h4>本契約</h4><p>月額課金スタート。いつでも解約OK、縛りなし。</p></div>
       </div>
     </div>
   </div>
@@ -419,28 +326,28 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
     <h2 class="section-title fade-in">よくある質問</h2>
     <div class="faq-list" style="margin-top:2rem">
       <div class="faq-item fade-in">
-        <div class="faq-q">具体的に何ができますか？</div>
-        <div class="faq-a"><p>上記の実績が示す通り、リサーチ、資料作成、LP制作、タスク管理、メール対応、競合調査、事業計画、プロダクト開発、法務チェックなど幅広く対応します。基本的に「デスクワーク全般」と考えてください。</p></div>
+        <div class="faq-q">ITやスマホが苦手でも使えますか？</div>
+        <div class="faq-a"><p>はい、LINEのようにメッセージを送るだけです。「インスタの投稿文作って」「求人の文章考えて」と話しかけるだけ。スマホが使える方なら誰でもOKです。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">情報の秘密保持は？</div>
-        <div class="faq-a"><p>専用のTelegramグループで運用し、あなたの情報は他のクライアントと一切共有しません。必要に応じてNDA締結も可能です。</p></div>
+        <div class="faq-q">どのSNSに対応していますか？</div>
+        <div class="faq-a"><p>Instagram、TikTok、X（旧Twitter）、LINE公式、Facebook、Googleビジネスプロフィールなど主要SNS全てに対応しています。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">対応時間は？</div>
-        <div class="faq-a"><p>24時間対応です。AIなので寝ません。深夜や早朝の依頼もOK。朝8時にはその日のブリーフィングが届きます。</p></div>
+        <div class="faq-q">料理の写真撮影もしてくれますか？</div>
+        <div class="faq-a"><p>撮影自体はお店でお願いしますが、「どう撮れば映えるか」のアドバイスは可能です。撮った写真を送っていただければ、投稿文やPOPへの加工は全て対応します。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">1日の依頼件数に制限はありますか？</div>
-        <div class="faq-a"><p>ありません。Telegramでメッセージを送るだけ。何件でもお気軽にどうぞ。</p></div>
+        <div class="faq-q">複数店舗でも使えますか？</div>
+        <div class="faq-a"><p>はい、対応可能です。店舗ごとに別の相談もできます。2店舗目以降は割引プランもご用意しています。</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-q">食品衛生や法律関連も相談できますか？</div>
+        <div class="faq-a"><p>食品衛生法の基本的な確認、営業許可の種類、アレルギー表示の義務など、一般的な法務チェックは可能です。専門的な判断が必要な場合は、適切な専門家をご紹介します。</p></div>
       </div>
       <div class="faq-item fade-in">
         <div class="faq-q">解約はいつでもできますか？</div>
-        <div class="faq-a"><p>はい、いつでも解約可能です。最低契約期間や違約金はありません。</p></div>
-      </div>
-      <div class="faq-item fade-in">
-        <div class="faq-q">AIだけで本当に大丈夫？</div>
-        <div class="faq-a"><p>Kaiは最新AI（Claude）をベースに、17事業・10億円調達の経験を持つ小松が全案件を監修。AIの速度と正確性に、経営者としての実戦経験・判断力・人脈が加わります。「AIに丸投げ」ではなく、「経営のプロがAIを使いこなす」サービスです。</p></div>
+        <div class="faq-a"><p>はい、いつでも解約可能です。最低契約期間や違約金はありません。1ヶ月だけ試してみるのもOKです。</p></div>
       </div>
     </div>
   </div>
@@ -449,8 +356,8 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <!-- Final CTA -->
 <section class="final-cta">
   <div class="container fade-in">
-    <h2>まずは<span class="accent">無料</span>で<br>相談してみませんか？</h2>
-    <div class="slots">モニター枠 残り: <span id="slots">20</span>組 / 20組</div>
+    <h2>まずは<span class="accent">1店舗</span>で<br>試してみませんか？</h2>
+    <div class="slots">モニター枠 残り: <span id="slots">20</span>店舗 / 20店舗</div>
     <p>1ヶ月単位の契約。いつでも解約OK、縛りなし。</p>
     <a href="https://t.me/kenken" class="cta-btn" style="font-size:1.2rem;padding:1.2rem 3.5rem">無料相談する →</a>
   </div>
@@ -461,30 +368,10 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 </footer>
 
 <script>
-// Scroll fade-in
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
-}, {threshold: 0.1});
-document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
-
-// Chat tabs
-document.querySelectorAll('.chat-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    const id = tab.dataset.chat;
-    document.querySelectorAll('.chat-tab').forEach(t => {
-      t.style.background = 'var(--bg3)'; t.style.color = 'var(--text2)'; t.style.border = '1px solid #333';
-    });
-    tab.style.background = 'var(--blue)'; tab.style.color = '#fff'; tab.style.border = 'none';
-    document.querySelectorAll('.chat-content').forEach(c => { c.style.display = 'none'; });
-    const target = document.querySelector('.chat-content[data-chat="'+id+'"]');
-    if(target) target.style.display = 'flex';
-  });
-});
-
-// FAQ toggle
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
-});
+const obs=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add('visible'),obs.unobserve(e.target))})},{threshold:.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+document.querySelectorAll('.chat-tab').forEach(tab=>{tab.addEventListener('click',()=>{const id=tab.dataset.chat;document.querySelectorAll('.chat-tab').forEach(t=>{t.style.background='var(--bg3)';t.style.color='var(--text2)';t.style.border='1px solid #333'});tab.style.background='var(--blue)';tab.style.color='#fff';tab.style.border='none';document.querySelectorAll('.chat-content').forEach(c=>{c.style.display='none'});const target=document.querySelector('.chat-content[data-chat="'+id+'"]');if(target)target.style.display='flex'})});
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>q.parentElement.classList.toggle('open'))});
 </script>
 </body>
 </html>
