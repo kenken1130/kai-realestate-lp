@@ -3,31 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kai — エステサロンの最強の右腕</title>
-<meta name="description" content="エステサロンオーナー向けAIアシスタント。集客・SNS運用・予約管理・口コミ対応・求人・経理まで月額5万円で全部おまかせ。先着20店舗。">
-<meta property="og:title" content="Kai — エステサロンの最強の右腕。集客・SNS・予約管理、全部AIにおまかせ。">
-<meta property="og:description" content="月額10万円→モニター価格5万円。スタッフ1人の1/3以下で、24時間働くサロンアシスタント。先着20店舗。">
+<title>Kai — 不動産会社の最強の右腕</title>
+<meta name="description" content="不動産会社向けAIアシスタント。物件資料・チラシ作成、ポータルサイト更新、反響対応、集客・SNS、経理まで月額5万円で全部おまかせ。先着20社。">
+<meta property="og:title" content="Kai — 不動産会社の最強の右腕。物件資料・集客・反響対応、全部AIにおまかせ。">
+<meta property="og:description" content="月額10万円→モニター価格5万円。営業マン1人の1/5以下で、24時間働く不動産アシスタント。先着20社。">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0a0a0a;--bg2:#111;--bg3:#1a1a1a;--text:#f0f0f0;--text2:#999;--blue:#c07ab8;--gold:#FFD700;--gradient:linear-gradient(135deg,#c07ab8,#e8a0d0)}
+:root{--bg:#0a0a0a;--bg2:#111;--bg3:#1a1a1a;--text:#f0f0f0;--text2:#999;--blue:#2a7d5f;--gold:#FFD700;--gradient:linear-gradient(135deg,#2a7d5f,#4aad8f)}
 html{scroll-behavior:smooth}
 body{font-family:'Noto Sans JP','Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
 a{color:var(--blue);text-decoration:none}
 .fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(192,122,184,.1) 0%,transparent 60%);animation:pulse 8s ease-in-out infinite}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(42,125,95,.1) 0%,transparent 60%);animation:pulse 8s ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
 .hero-content{position:relative;z-index:1;max-width:800px}
 .badge{display:inline-block;background:linear-gradient(135deg,var(--gold),#ffaa00);color:#000;font-weight:700;font-size:.85rem;padding:.4rem 1.2rem;border-radius:50px;margin-bottom:1.5rem;letter-spacing:.05em}
 .hero h1{font-size:clamp(2rem,6vw,3.5rem);font-weight:900;line-height:1.3;margin-bottom:1rem;background:linear-gradient(135deg,#fff,#ccc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero .sub{font-size:clamp(1rem,2.5vw,1.3rem);color:var(--text2);margin-bottom:2.5rem;line-height:1.8}
 .hero .sub strong{color:var(--text)}
-.cta-btn{display:inline-block;background:var(--gradient);color:#fff;font-weight:700;font-size:1.1rem;padding:1rem 3rem;border-radius:60px;transition:all .3s;box-shadow:0 4px 30px rgba(192,122,184,.4)}
-.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(192,122,184,.6)}
+.cta-btn{display:inline-block;background:var(--gradient);color:#fff;font-weight:700;font-size:1.1rem;padding:1rem 3rem;border-radius:60px;transition:all .3s;box-shadow:0 4px 30px rgba(42,125,95,.4)}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(42,125,95,.6)}
 section{padding:5rem 1.5rem}
 .container{max-width:1000px;margin:0 auto}
 .section-title{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:900;text-align:center;margin-bottom:.8rem}
@@ -76,7 +76,7 @@ section{padding:5rem 1.5rem}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 1.5rem}
 .faq-item.open .faq-a{max-height:300px;padding:0 1.5rem 1.2rem}
 .faq-a p{font-size:.9rem;color:var(--text2);line-height:1.8}
-.final-cta{text-align:center;padding:6rem 1.5rem;background:radial-gradient(ellipse at center,rgba(192,122,184,.1) 0%,transparent 70%)}
+.final-cta{text-align:center;padding:6rem 1.5rem;background:radial-gradient(ellipse at center,rgba(42,125,95,.1) 0%,transparent 70%)}
 .final-cta h2{font-size:clamp(1.5rem,4vw,2.5rem);font-weight:900;margin-bottom:1rem}
 .final-cta p{color:var(--text2);margin-bottom:2rem;font-size:1.1rem}
 .slots{font-size:1.2rem;color:var(--gold);font-weight:700;margin-bottom:2rem}
@@ -88,14 +88,14 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <!-- Hero -->
 <section class="hero">
   <div class="hero-content fade-in">
-    <div class="badge">✨ 先着20サロン モニター価格 50%OFF</div>
-    <h1>施術に集中してください。<br>集客も経営も、全部やります。</h1>
+    <div class="badge">🏠 先着20社 モニター価格 50%OFF</div>
+    <h1>営業に集中してください。<br>事務も集客も、全部やります。</h1>
     <p class="sub">
-      SNS投稿、予約フォロー、口コミ対応、求人、経理…<br>
-      <strong>サロン経営の雑務</strong>を、<strong>AI + 経営のプロ</strong>が<strong>月5万円</strong>で全部引き受けます。<br>
-      <strong>スタッフ1人の1/3以下</strong>で、<strong>24時間働くサロンアシスタント</strong>。
+      物件資料、ポータル更新、チラシ作成、反響対応、経理…<br>
+      <strong>不動産業務の雑務</strong>を、<strong>AI + 経営のプロ</strong>が<strong>月5万円</strong>で全部引き受けます。<br>
+      <strong>営業マン1人の1/5以下</strong>で、<strong>24時間働くアシスタント</strong>。
     </p>
-    <a href="https://t.me/ken1130" class="cta-btn">無料相談する →</a>
+    <a href="https://t.me/kenken" class="cta-btn">無料相談する →</a>
   </div>
 </section>
 
@@ -103,14 +103,14 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="problems">
   <div class="container">
     <h2 class="section-title fade-in">こんな悩み、ありませんか？</h2>
-    <p class="section-sub fade-in">施術が忙しくて、経営業務に手が回らない</p>
+    <p class="section-sub fade-in">営業が忙しくて、事務・集客に手が回らない</p>
     <div class="problem-grid">
-      <div class="problem-card fade-in"><div class="icon">📸</div><p>SNS・ビフォーアフターの<br>投稿が続かない</p></div>
-      <div class="problem-card fade-in"><div class="icon">📱</div><p>ホットペッパーの<br>更新が後回し</p></div>
-      <div class="problem-card fade-in"><div class="icon">⭐</div><p>Googleの口コミに<br>返信できていない</p></div>
-      <div class="problem-card fade-in"><div class="icon">👥</div><p>スタッフが採用<br>できない</p></div>
-      <div class="problem-card fade-in"><div class="icon">💸</div><p>リピート率が<br>上がらない</p></div>
-      <div class="problem-card fade-in"><div class="icon">🧾</div><p>経理・確定申告が<br>面倒すぎる</p></div>
+      <div class="problem-card fade-in"><div class="icon">📋</div><p>物件資料・マイソクの<br>作成が追いつかない</p></div>
+      <div class="problem-card fade-in"><div class="icon">🌐</div><p>SUUMO・HOME'Sの<br>更新が後回し</p></div>
+      <div class="problem-card fade-in"><div class="icon">📞</div><p>反響対応が遅れて<br>他社に取られる</p></div>
+      <div class="problem-card fade-in"><div class="icon">📸</div><p>SNS・ブログの<br>更新が止まっている</p></div>
+      <div class="problem-card fade-in"><div class="icon">👥</div><p>営業マンが採用<br>できない</p></div>
+      <div class="problem-card fade-in"><div class="icon">🧾</div><p>契約書・重説の<br>準備が面倒</p></div>
     </div>
   </div>
 </section>
@@ -119,7 +119,7 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section style="padding:5rem 1.5rem">
   <div class="container">
     <h2 class="section-title fade-in">ただのAIツールとは、<span class="gold">決定的に</span>違う。</h2>
-    <p class="section-sub fade-in">ChatGPTは便利。でも「サロン経営がわかる人間」が使いこなすから結果が出る。</p>
+    <p class="section-sub fade-in">ChatGPTは便利。でも「経営がわかる人間」が使いこなすから結果が出る。</p>
 
     <div style="display:flex;flex-direction:column;gap:1.5rem;max-width:600px;margin:0 auto">
       <div class="fade-in" style="background:var(--bg2);border:1px solid #222;border-radius:16px;padding:2rem;position:relative;overflow:hidden">
@@ -129,8 +129,8 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem">
           <li style="font-size:.9rem;color:var(--text)">⚡ 17事業を立ち上げた<strong>経営判断力</strong></li>
           <li style="font-size:.9rem;color:var(--text)">⚡ NFT+株式で<strong>10億円調達</strong>の実績</li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ 集客・リピート設計・経営の<strong>実戦経験</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのサロンに合わせた<strong>戦略的助言</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 集客・マーケ・経営の<strong>実戦経験</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ あなたの会社に合わせた<strong>戦略的助言</strong></li>
         </ul>
       </div>
       <div style="text-align:center;font-size:1.5rem;color:var(--gold)">×</div>
@@ -139,14 +139,14 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
         <div style="font-size:1.2rem;margin-bottom:.5rem">🤖 <strong>Kai</strong>（AI参謀）</div>
         <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">最新AI搭載 / 24時間稼働</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem">
-          <li style="font-size:.9rem;color:var(--text)">⚡ SNS投稿文・キャンペーン企画を<strong>秒速で作成</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ 口コミ返信・求人文面を<strong>即生成</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ 売上分析・リピート率改善を<strong>自動化</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのサロンを学習し<strong>日々進化</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 物件資料・チラシ・提案書を<strong>秒速で作成</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 反響メール・追客文面を<strong>即生成</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 市場分析・相場調査を<strong>自動化</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ あなたの会社を学習し<strong>日々進化</strong></li>
         </ul>
       </div>
     </div>
-    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--gold);font-weight:700;font-size:1.1rem">人間の判断力 × AIの実行力 = サロン経営の最強の右腕</p>
+    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--gold);font-weight:700;font-size:1.1rem">人間の判断力 × AIの実行力 = 不動産経営の最強の右腕</p>
   </div>
 </section>
 
@@ -157,61 +157,62 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
     <p class="section-sub fade-in">LINEのように話しかけるだけ。こんな感じで動きます。</p>
 
     <div style="display:flex;gap:.5rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap" class="fade-in">
-      <button class="chat-tab active" data-chat="1" style="background:var(--blue);color:#fff;border:none;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📸 SNS集客</button>
-      <button class="chat-tab" data-chat="2" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🔄 リピート施策</button>
-      <button class="chat-tab" data-chat="3" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">⭐ 口コミ対応</button>
-      <button class="chat-tab" data-chat="4" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">👥 求人</button>
-      <button class="chat-tab" data-chat="5" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🎁 キャンペーン</button>
+      <button class="chat-tab active" data-chat="1" style="background:var(--blue);color:#fff;border:none;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📋 物件資料</button>
+      <button class="chat-tab" data-chat="2" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📞 反響対応</button>
+      <button class="chat-tab" data-chat="3" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📊 相場調査</button>
+      <button class="chat-tab" data-chat="4" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📸 SNS集客</button>
+      <button class="chat-tab" data-chat="5" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📝 契約書類</button>
     </div>
 
     <div style="max-width:500px;margin:0 auto">
       <div class="chat-phone fade-in" style="background:#0e1621;border-radius:20px;padding:0;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)">
         <div style="background:#17212b;padding:1rem 1.2rem;display:flex;align-items:center;gap:.8rem;border-bottom:1px solid #1e2c3a">
-          <div style="width:40px;height:40px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:1.2rem">✨</div>
-          <div><div style="font-weight:600;font-size:.9rem">Kai × あなたのサロン</div><div style="font-size:.75rem;color:#6d8da6">オンライン</div></div>
+          <div style="width:40px;height:40px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:1.2rem">🏠</div>
+          <div><div style="font-weight:600;font-size:.9rem">Kai × あなたの会社</div><div style="font-size:.75rem;color:#6d8da6">オンライン</div></div>
         </div>
 
         <div style="padding:1rem;min-height:380px">
 
-          <!-- Chat 1: SNS -->
+          <!-- Chat 1: 物件資料 -->
           <div class="chat-content" data-chat="1" style="display:flex;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">今日のお客様のビフォーアフター写真送るから、インスタの投稿文作って✨</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">📷 [ビフォーアフター写真]</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">すごい変化！✨ 投稿文3パターン作ったよ👇<br><br>①「✨ たった60分でこの変化 ✨ 小顔コルギで−2cm！お客様も鏡を見て思わず笑顔に😊 初回限定50%OFF」<br><br>②「【Before→After】フェイスラインがスッキリ✨ むくみが気になる方、ぜひ一度お試しください🌿」<br><br>③「お客様の変化が私たちの喜び💕 小顔コルギ60分コース。驚きの結果をご覧ください」<br><br>#エステ #小顔 #コルギ #ビフォーアフター #渋谷エステ #フェイシャル</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">①で！ストーリーズ用も欲しい</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">新規物件のマイソク作って。港区タワマン、3LDK、85㎡、4,980万、駅徒歩3分</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ マイソク作るね。<br><br>追加情報あれば教えて：<br>・築年数？<br>・階数？眺望は？<br>・管理費・修繕積立金？<br>・駐車場の有無？<br><br>仮置きでもまず作るよ。写真あれば送って。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">築5年、25階、湾岸ビュー、管理費2.5万、修繕1.2万、駐車場あり</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">完成したよ 👇<br><br>🔗 マイソクPDF<br><br>キャッチコピー：<br>「25階からの湾岸パノラマ。港区タワー3LDK」<br><br>SUUMO・HOME'S用のテキストも作った。コピペで入稿できるよ。</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 物件情報を送って10分で資料完成</div>
+          </div>
+
+          <!-- Chat 2: 反響対応 -->
+          <div class="chat-content" data-chat="2" style="display:none;flex-direction:column;gap:.8rem">
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">SUUMOから反響入った。「港区で3LDK探してます。予算5000万まで」って。返信文考えて</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">即対応が命！⚡ 返信文作ったよ👇<br><br>「〇〇様<br><br>お問い合わせいただきありがとうございます。△△不動産の□□です。<br><br>港区3LDK、ご予算5,000万円以内ですね。<br>現在、条件に合う物件を3件ご用意できます。<br><br>①港区芝浦 3LDK 82㎡ 4,980万円 築5年<br>②港区三田 3LDK 78㎡ 4,780万円 築8年<br>③港区白金 3LDK 75㎡ 4,580万円 築10年<br><br>ご都合の良い日時に内見をご案内いたします。今週末はいかがでしょうか？<br><br>お気軽にお申し付けください。」<br><br>物件情報は仮だから、実際の在庫に差し替えてね。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">完璧👏 すぐ送る！</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 反響から1分で返信文完成。スピードで差をつける</div>
+          </div>
+
+          <!-- Chat 3: 相場調査 -->
+          <div class="chat-content" data-chat="3" style="display:none;flex-direction:column;gap:.8rem">
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">売却査定で世田谷区の戸建ての相場感知りたい。築15年、30坪くらい</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">調べてくるね ⚡<br><br>📊 世田谷区 戸建て 相場レポート<br><br>■ 築15年前後・30坪の取引事例：<br>・世田谷（駅徒歩10分）: 5,800〜7,200万円<br>・用賀エリア: 6,500〜8,000万円<br>・三軒茶屋エリア: 7,000〜9,500万円<br><br>■ 坪単価トレンド：<br>・2024年→2026年で約8%上昇<br>・世田谷区は需要堅調<br><br>■ 査定提案価格：<br>→ エリアにもよるけど 6,500〜7,500万円 が妥当ライン<br><br>お客様への査定書も作る？</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">査定書も頼む！</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ エリア相場+査定書を30分で作成</div>
+          </div>
+
+          <!-- Chat 4: SNS -->
+          <div class="chat-content" data-chat="4" style="display:none;flex-direction:column;gap:.8rem">
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">物件の写真撮ったからインスタ用の投稿文作って🏠</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">📷 [リビング写真]</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">いい写真！⚡ 投稿文3パターン👇<br><br>①「🏠 港区タワマン25F｜湾岸ビューの3LDK<br>朝日が差し込む開放的なリビング。この景色が毎日の日常に✨<br>4,980万円｜詳細はDMで」<br><br>②「【新着物件】東京湾を一望する暮らし🌊<br>85㎡のゆとり3LDK。共用施設も充実のタワーレジデンス」<br><br>③「この景色、いくらだと思いますか？<br>答えはプロフィールのリンクから👆」<br><br>#港区マンション #タワマン #東京不動産 #新着物件 #湾岸ビュー</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">③おもしろい！それで！</div>
             <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 写真送って1分で投稿文完成</div>
           </div>
 
-          <!-- Chat 2: Repeat -->
-          <div class="chat-content" data-chat="2" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">最近リピート率下がってる気がする…何か対策ない？</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">分析してみるね ⚡<br><br>リピート率UPの即効施策👇<br><br>①【次回予約促進】施術後に次回予約で10%OFF<br>→ 「今日の肌の状態だと、3週間後がベスト」と具体的に提案<br><br>②【サンクスDM】施術翌日にお礼+ホームケアアドバイスをLINEで自動送信<br><br>③【離脱防止】60日来店なしのお客様に限定クーポン自動送付<br><br>④【回数券】5回コースで1回無料（LTV向上）<br><br>①②のDMテンプレ、今すぐ作る？</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">全部やって！🙏</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 課題分析→具体策→テンプレまで5分</div>
-          </div>
-
-          <!-- Chat 3: Reviews -->
-          <div class="chat-content" data-chat="3" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">Googleに口コミ入ったけど「勧誘がしつこい」って書かれた😭 返信どうしよう</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">落ち着いて、誠実な返信作るね ⚡<br><br>「この度はご来店いただきありがとうございます。<br><br>ご不快な思いをさせてしまい、大変申し訳ございませんでした。お客様のお気持ちを最優先に考えるべきところ、配慮が不足しておりました。<br><br>スタッフ一同、カウンセリングの在り方を見直し、お客様が安心して施術を受けていただける環境づくりに努めてまいります。<br><br>貴重なご意見をいただき感謝いたします。」<br><br>これでOK？あと、スタッフ向けのカウンセリング改善マニュアルも作れるよ。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">マニュアルもお願い！</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 危機対応→改善策まで一気に対応</div>
-          </div>
-
-          <!-- Chat 4: Hiring -->
-          <div class="chat-content" data-chat="4" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">エステティシャン1人募集したい。リジョブに出す文章考えて</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ サロンの魅力を活かして作ったよ👇<br><br>━━━━━━━━━━━<br>【エステティシャン募集】<br>渋谷の人気プライベートサロン✨<br>━━━━━━━━━━━<br><br>✅ 未経験OK・研修制度充実<br>✅ 完全予約制でゆったり施術<br>✅ ノルマなし・技術に集中できる環境<br>✅ 社保完備・月8日休み<br>✅ 駅チカ徒歩2分<br><br>月給: 25万円〜（経験者優遇）<br><br>「お客様を笑顔にしたい」<br>その想いがあれば十分です💕<br>━━━━━━━━━━━<br><br>リジョブ・indeed両方に使える形にしたよ。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">完璧！ありがとう✨</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ サロン求人に特化した文面を即作成</div>
-          </div>
-
-          <!-- Chat 5: Campaign -->
+          <!-- Chat 5: 契約書類 -->
           <div class="chat-content" data-chat="5" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">来月の母の日キャンペーン何かやりたいんだけど、アイデアある？</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">母の日、最高のタイミング！✨<br><br>🎁 キャンペーン案3つ👇<br><br>①【ペアチケット】母娘で来店→2人目半額<br>→ 新規+既存で客単価UP<br><br>②【ギフトカード】施術ギフト券をオンライン販売<br>→ 来店しなくても売上発生<br><br>③【SNSコンテスト】お母さんとの写真投稿でペア施術プレゼント<br>→ UGCで認知拡大<br><br>おすすめは①+②の組み合わせ。<br>告知用のインスタ投稿、ストーリーズ、LINE配信文、全部作るよ。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">①②やる！全部お願い🙏</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 企画→告知素材まで一括対応</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">明日契約なんだけど、重説のチェックポイントまとめて。マンション売買で</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ 重説チェックリスト👇<br><br>【必須確認項目】<br>□ 登記簿謄本と所有者の一致<br>□ 抵当権の有無・残債確認<br>□ 都市計画法上の制限<br>□ 建ぺい率・容積率<br>□ マンション管理規約の確認<br>□ 修繕積立金の滞納有無<br>□ 大規模修繕の予定・履歴<br>□ 駐車場・駐輪場の利用条件<br>□ ペット飼育の可否<br>□ 瑕疵担保責任の範囲<br>□ 手付金の額と解除条件<br>□ 引渡し時期の確認<br><br>物件情報送ってくれたら、この物件固有の注意点も洗い出すよ。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">助かる！🙏</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 契約前の確認事項を即整理</div>
           </div>
 
         </div>
@@ -225,32 +226,32 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="results">
   <div class="container">
     <div class="fade-in">
-      <h2 class="section-title">エステサロンで、<span class="gold">こんなこと</span>ができます</h2>
+      <h2 class="section-title">不動産会社で、<span class="gold">こんなこと</span>ができます</h2>
       <p class="section-sub">話しかけるだけで、すぐに実行</p>
     </div>
 
-    <div class="category-label fade-in">📣 集客・SNS</div>
+    <div class="category-label fade-in">📣 集客・反響獲得</div>
     <div class="result-grid">
-      <div class="result-card fade-in"><div class="emoji">📸</div><h4>インスタ投稿・ストーリーズ作成</h4><p>ビフォーアフター写真を送るだけ。キャプション+ハッシュタグ+ストーリーズ文面。</p></div>
-      <div class="result-card fade-in"><div class="emoji">📍</div><h4>Googleマップ・MEO対策</h4><p>口コミ返信、ビジネスプロフィール最適化、写真選定アドバイス。</p></div>
-      <div class="result-card fade-in"><div class="emoji">💆</div><h4>ホットペッパービューティー最適化</h4><p>メニュー説明文、クーポン設計、ブログ記事の作成。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🎁</div><h4>キャンペーン・イベント企画</h4><p>季節イベント、紹介キャンペーン、SNSコンテスト企画。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📸</div><h4>SNS物件投稿</h4><p>物件写真を送るだけ。Instagram・TikTok・YouTube用の投稿文+ハッシュタグ。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🌐</div><h4>ポータルサイト入稿文</h4><p>SUUMO・HOME'S・at homeに最適化した物件紹介文。コピペで入稿。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📍</div><h4>Googleマップ・MEO対策</h4><p>口コミ返信、ビジネスプロフィール最適化で地域検索上位を狙う。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📄</div><h4>チラシ・DM作成</h4><p>ポスティングチラシ、オープンハウス告知、売却査定DM。</p></div>
     </div>
 
-    <div class="category-label fade-in">🔄 リピート・顧客管理</div>
+    <div class="category-label fade-in">🏠 営業支援</div>
     <div class="result-grid">
-      <div class="result-card fade-in"><div class="emoji">💌</div><h4>サンクスDM・フォローメッセージ</h4><p>施術後のお礼+ホームケアアドバイス。LINE・DMテンプレ作成。</p></div>
-      <div class="result-card fade-in"><div class="emoji">📊</div><h4>リピート率分析・改善</h4><p>離脱顧客の分析、再来店促進クーポン、回数券設計。</p></div>
-      <div class="result-card fade-in"><div class="emoji">📋</div><h4>カウンセリングシート設計</h4><p>カルテ・問診票・同意書のテンプレ作成。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🎫</div><h4>回数券・コース設計</h4><p>客単価UP・LTV最大化のための料金プラン提案。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📋</div><h4>物件資料・マイソク作成</h4><p>物件情報を送るだけで、見やすい資料をPDF・画像で納品。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📞</div><h4>反響対応・追客メール</h4><p>反響即レスの返信文、追客ステップメール、内見後フォロー。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📊</div><h4>相場調査・査定書作成</h4><p>エリア相場レポート、売却査定書、競合物件分析。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🗺</div><h4>エリアマーケティング</h4><p>ターゲットエリアの人口動態、開発計画、将来性分析。</p></div>
     </div>
 
-    <div class="category-label fade-in">📈 経営サポート</div>
+    <div class="category-label fade-in">📈 経営・事務サポート</div>
     <div class="result-grid">
-      <div class="result-card fade-in"><div class="emoji">💰</div><h4>売上分析・KPIレポート</h4><p>日次/月次売上、客単価、稼働率、リピート率を可視化。</p></div>
-      <div class="result-card fade-in"><div class="emoji">👥</div><h4>求人・採用支援</h4><p>リジョブ・indeed用の求人文面、面接質問リスト、研修マニュアル。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🧾</div><h4>経理・確定申告準備</h4><p>経費整理テンプレ、帳簿管理、税理士連携サポート。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🏪</div><h4>出店・拡大計画</h4><p>2号店の立地調査、損益シミュレーション、融資資料作成。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📝</div><h4>契約書類チェック</h4><p>重説チェックリスト、契約書の確認ポイント整理。</p></div>
+      <div class="result-card fade-in"><div class="emoji">👥</div><h4>求人・採用支援</h4><p>求人広告文面、面接質問リスト、研修マニュアル作成。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🧾</div><h4>経理・確定申告準備</h4><p>経費整理、帳簿管理、仲介手数料の管理テンプレ。</p></div>
+      <div class="result-card fade-in"><div class="emoji">💰</div><h4>売上・KPIレポート</h4><p>月次売上、反響数、成約率、広告ROIを可視化。</p></div>
     </div>
   </div>
 </section>
@@ -259,16 +260,16 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="service">
   <div class="container">
     <h2 class="section-title fade-in">Kaiにおまかせできること</h2>
-    <p class="section-sub fade-in">エステサロンに特化した8つのサポート</p>
+    <p class="section-sub fade-in">不動産会社に特化した8つのサポート</p>
     <div class="service-list">
-      <div class="service-item fade-in"><div class="icon">📸</div><div><h4>SNS運用・投稿代行</h4><p>Instagram、TikTok、LINE公式。ビフォーアフター投稿も美しく。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">📍</div><div><h4>Googleマップ・口コミ対策</h4><p>口コミ返信、MEO対策で地域検索1位を狙う。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">💆</div><div><h4>ホットペッパー最適化</h4><p>メニュー文面、クーポン設計、ブログ更新で予約数UP。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🔄</div><div><h4>リピート率改善</h4><p>フォローDM、離脱防止、回数券設計で顧客を逃さない。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">👥</div><div><h4>求人・採用サポート</h4><p>求人文面、面接設計、スタッフ研修マニュアル作成。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🎁</div><div><h4>キャンペーン企画</h4><p>季節イベント、紹介制度、SNSコンテスト。企画から告知素材まで。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🧾</div><div><h4>経理・確定申告サポート</h4><p>経費整理、帳簿テンプレ、税理士との連携サポート。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🤖</div><div><h4>予約・システム開発</h4><p>LINE予約システム、顧客管理アプリ、自動リマインド。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📋</div><div><h4>物件資料・マイソク作成</h4><p>物件情報を伝えるだけ。見やすい資料をPDF・画像で即納品。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🌐</div><div><h4>ポータルサイト最適化</h4><p>SUUMO・HOME'S・at homeに刺さる物件紹介文で反響UP。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📞</div><div><h4>反響対応・追客支援</h4><p>即レス返信文、ステップメール、内見後フォローで成約率向上。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📸</div><div><h4>SNS運用・集客</h4><p>Instagram・TikTok・YouTubeで物件を魅力的に発信。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📊</div><div><h4>相場調査・査定書</h4><p>エリア相場レポート、競合分析、売却査定書作成。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📝</div><div><h4>契約書類サポート</h4><p>重説チェック、契約書の確認ポイント、法務チェック。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">👥</div><div><h4>求人・採用サポート</h4><p>求人文面、面接設計、新人研修マニュアル作成。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🤖</div><div><h4>業務システム開発</h4><p>顧客管理、物件DB、自動追客システムの構築。</p></div></div>
     </div>
     <p style="text-align:center;color:var(--text2);font-size:.9rem" class="fade-in">※ 専用チャットグループ（あなた + 小松 + Kai）で24時間対応<br>小松が戦略を判断し、Kaiが即座に実行。このコンビが強い。</p>
   </div>
@@ -278,19 +279,19 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="pricing">
   <div class="container">
     <h2 class="section-title fade-in">料金</h2>
-    <p class="section-sub fade-in"><span class="gold">スタッフ1人の1/3以下</span>で、24時間働くサロンアシスタント</p>
+    <p class="section-sub fade-in"><span class="gold">営業マン1人の1/5以下</span>で、24時間働くアシスタント</p>
     <div class="pricing-card fade-in">
-      <div class="limit-badge">✨ 先着20サロン モニター価格</div>
+      <div class="limit-badge">🏠 先着20社 モニター価格</div>
       <p style="font-size:1.2rem;color:var(--text2);text-decoration:line-through;margin-bottom:.3rem">通常価格 ¥100,000/月</p>
       <div class="price" style="color:var(--gold)">¥50,000<span>/月</span></div>
       <p class="tax">税込 ¥55,000（50%OFF）</p>
       <div class="compare">
-        <div class="compare-row old">受付スタッフ1人 — 月20〜30万円</div>
+        <div class="compare-row old">事務スタッフ1人 — 月25〜35万円</div>
+        <div class="compare-row old">Web集客コンサル — 月15〜40万円</div>
         <div class="compare-row old">SNS代行会社 — 月10〜30万円</div>
-        <div class="compare-row old">集客コンサル — 月20〜50万円</div>
-        <div class="compare-row highlight">Kai — <s>月額10万円</s> → モニター価格 月額5万円 ✨</div>
+        <div class="compare-row highlight">Kai — <s>月額10万円</s> → モニター価格 月額5万円 🏠</div>
       </div>
-      <a href="https://t.me/ken1130" class="cta-btn" style="width:100%;text-align:center">無料相談する →</a>
+      <a href="https://t.me/kenken" class="cta-btn" style="width:100%;text-align:center">無料相談する →</a>
     </div>
   </div>
 </section>
@@ -303,7 +304,7 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
     <div class="flow-steps">
       <div class="flow-step fade-in">
         <div class="num">1</div>
-        <div class="content"><h4>無料相談</h4><p>サロンの課題をヒアリング。「こんなことできる？」何でも聞いてください。</p></div>
+        <div class="content"><h4>無料相談</h4><p>御社の課題をヒアリング。「こんなことできる？」何でも聞いてください。</p></div>
       </div>
       <div class="flow-step fade-in">
         <div class="num">2</div>
@@ -323,24 +324,24 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
     <h2 class="section-title fade-in">よくある質問</h2>
     <div class="faq-list" style="margin-top:2rem">
       <div class="faq-item fade-in">
-        <div class="faq-q">ITやスマホが苦手でも使えますか？</div>
-        <div class="faq-a"><p>はい、LINEのようにメッセージを送るだけです。「インスタの投稿文作って」「求人の文章考えて」と話しかけるだけ。スマホが使える方なら誰でもOKです。</p></div>
+        <div class="faq-q">ITが苦手なスタッフでも使えますか？</div>
+        <div class="faq-a"><p>はい、LINEのようにメッセージを送るだけです。「この物件の資料作って」「反響の返信文考えて」と話しかけるだけ。スマホが使える方なら誰でもOKです。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">ホットペッパービューティーにも対応していますか？</div>
-        <div class="faq-a"><p>はい、ホットペッパービューティーのメニュー文面、クーポン設計、ブログ記事、口コミ返信に全て対応しています。Instagram、LINE公式、Googleビジネスプロフィールなど主要媒体は全てカバーします。</p></div>
+        <div class="faq-q">SUUMO・HOME'Sへの入稿もやってくれますか？</div>
+        <div class="faq-a"><p>入稿用のテキスト（物件紹介文・キャッチコピー・設備情報）は全て作成します。実際のポータルサイトへの入力作業は御社で行っていただきますが、コピペだけで完了する形で納品します。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">施術写真の撮り方も教えてもらえますか？</div>
-        <div class="faq-a"><p>はい、ビフォーアフター写真の撮影角度、ライティング、構図のアドバイスが可能です。「映える写真」のコツをお伝えします。撮った写真を送っていただければ、投稿素材への加工は全て対応します。</p></div>
+        <div class="faq-q">宅建業法に関する相談もできますか？</div>
+        <div class="faq-a"><p>広告表現の法的チェック（誇大広告の該当確認）、重説の確認ポイント整理、契約書の基本チェックなどは対応可能です。専門的な法的判断が必要な場合は、適切な専門家をご紹介します。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">複数店舗でも使えますか？</div>
-        <div class="faq-a"><p>はい、対応可能です。店舗ごとのSNS運用や売上分析もできます。2店舗目以降は割引プランもご用意しています。</p></div>
+        <div class="faq-q">複数店舗・複数スタッフで使えますか？</div>
+        <div class="faq-a"><p>はい、対応可能です。店舗ごとの物件管理やスタッフ別の利用もできます。複数店舗の場合は割引プランもご用意しています。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">エステの法律や広告規制も相談できますか？</div>
-        <div class="faq-a"><p>景品表示法・薬機法に関わる広告表現のチェック、特定商取引法に基づくクーリングオフ対応など、サロン運営に関わる法務チェックが可能です。専門的な判断が必要な場合は、適切な専門家をご紹介します。</p></div>
+        <div class="faq-q">物件の写真撮影もしてくれますか？</div>
+        <div class="faq-a"><p>撮影自体は御社で行っていただきますが、「反響が増える写真の撮り方」のアドバイスは可能です。撮った写真を送っていただければ、資料やSNS投稿への活用は全て対応します。</p></div>
       </div>
       <div class="faq-item fade-in">
         <div class="faq-q">解約はいつでもできますか？</div>
@@ -353,10 +354,10 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <!-- Final CTA -->
 <section class="final-cta">
   <div class="container fade-in">
-    <h2>まずは<span class="accent">1サロン</span>で<br>試してみませんか？</h2>
-    <div class="slots">モニター枠 残り: <span id="slots">20</span>サロン / 20サロン</div>
+    <h2>まずは<span class="accent">1社</span>で<br>試してみませんか？</h2>
+    <div class="slots">モニター枠 残り: <span id="slots">20</span>社 / 20社</div>
     <p>1ヶ月単位の契約。いつでも解約OK、縛りなし。</p>
-    <a href="https://t.me/ken1130" class="cta-btn" style="font-size:1.2rem;padding:1.2rem 3.5rem">無料相談する →</a>
+    <a href="https://t.me/kenken" class="cta-btn" style="font-size:1.2rem;padding:1.2rem 3.5rem">無料相談する →</a>
   </div>
 </section>
 
