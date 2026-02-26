@@ -176,6 +176,85 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
   </div>
 </section>
 
+<!-- Chat Demo -->
+<section style="background:var(--bg2);padding:5rem 1.5rem">
+  <div class="container">
+    <h2 class="section-title fade-in">実際の<span class="accent">やり取り</span>イメージ</h2>
+    <p class="section-sub fade-in">Telegramで話しかけるだけ。こんな感じで動きます。</p>
+
+    <!-- Chat tabs -->
+    <div style="display:flex;gap:.5rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap" class="fade-in">
+      <button class="chat-tab active" data-chat="1" style="background:var(--blue);color:#fff;border:none;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">💼 資料作成</button>
+      <button class="chat-tab" data-chat="2" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🔍 リサーチ</button>
+      <button class="chat-tab" data-chat="3" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📊 戦略相談</button>
+      <button class="chat-tab" data-chat="4" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🛠 開発</button>
+      <button class="chat-tab" data-chat="5" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">☀️ 朝ブリーフィング</button>
+    </div>
+
+    <!-- Chat windows -->
+    <div style="max-width:500px;margin:0 auto">
+      <div class="chat-phone fade-in" style="background:#0e1621;border-radius:20px;padding:0;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)">
+        <!-- Phone header -->
+        <div style="background:#17212b;padding:1rem 1.2rem;display:flex;align-items:center;gap:.8rem;border-bottom:1px solid #1e2c3a">
+          <div style="width:40px;height:40px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:1.2rem">⚡</div>
+          <div><div style="font-weight:600;font-size:.9rem">Kai × あなた</div><div style="font-size:.75rem;color:#6d8da6">オンライン</div></div>
+        </div>
+
+        <!-- Chat body -->
+        <div style="padding:1rem;min-height:380px">
+
+          <!-- Chat 1: 資料作成 -->
+          <div class="chat-content" data-chat="1" style="display:flex;flex-direction:column;gap:.8rem">
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">明日の投資家MTG用のピッチデッキ作って。事業概要はNotionにあるやつ使って</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ Notionの事業概要ベースで作る。<br><br>構成案：<br>1. 課題と市場<br>2. ソリューション<br>3. トラクション<br>4. ビジネスモデル<br>5. チーム<br>6. 資金使途<br><br>HTMLスライドで15分で仕上げる。URL共有するね。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">それでいい、頼んだ🙏</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">完成したよ 👇<br><br>🔗 https://example.github.io/pitch-deck/<br><br>スマホでもPCでもプレゼンできる。修正あれば言って。</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 依頼から15分で納品</div>
+          </div>
+
+          <!-- Chat 2: リサーチ -->
+          <div class="chat-content" data-chat="2" style="display:none;flex-direction:column;gap:.8rem">
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">渋谷エリアのパーソナルジムの競合調査してほしい。価格帯と特徴まとめて</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">渋谷エリア、了解。調べてくる ⚡</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">まとめた 👇<br><br>📊 渋谷パーソナルジム 15社比較<br><br>■ 価格帯<br>・高価格帯（月15万〜）: 3社<br>・中価格帯（月5-15万）: 8社<br>・低価格帯（〜月5万）: 4社<br><br>■ 空白ポイント<br>→ 「経営者特化」は0社。狙い目。<br><br>Notionに詳細レポート入れたよ。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">完璧👏 そのまま事業計画に使うわ</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 競合15社を30分で調査完了</div>
+          </div>
+
+          <!-- Chat 3: 戦略相談 -->
+          <div class="chat-content" data-chat="3" style="display:none;flex-direction:column;gap:.8rem">
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">今月キャッシュやばい。売上立てる方法なんかない？</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">現状整理するね。<br><br>💰 今の月次：<br>・固定収入: 会計ソフト 30-70万<br>・パイプライン: VEXUM 3社商談中<br><br>🎯 即効性ある打ち手：<br><br>①【今週】既存ネットワークに1on1営業（5件）<br>→ VEXUM月20万 × 2社 = +40万<br><br>②【来週】AI勉強会 → サブスク転換<br>→ 月5万 × 5人 = +25万<br><br>③【今月】代理店に紹介料15%設定<br>→ 他人が売ってくれる仕組み<br><br>リスト作る？</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">②やろう。勉強会の集客どうする？</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">X告知文とLP、今から作るよ ⚡<br>ターゲットリストも30分で出す。</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 相談→具体的アクションプランまで5分</div>
+          </div>
+
+          <!-- Chat 4: 開発 -->
+          <div class="chat-content" data-chat="4" style="display:none;flex-direction:column;gap:.8rem">
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">うちのバーのシフト管理、紙でやってるんだけどアプリにできない？</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">できるよ ⚡ こんな機能でどう？<br><br>📱 スタッフ側：<br>・スマホから希望シフト提出<br>・確定シフト確認<br><br>👑 マネージャー側：<br>・全員の希望を一覧表示<br>・AIが最適シフト自動生成<br>・ワンタップで公開<br><br>今から作る？</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">マジで！？作って！</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">できた 🎉<br><br>🔗 https://example.github.io/shift-manager/<br><br>スマホで開いてみて。スタッフにURL送るだけで使える。費用ゼロ。</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 相談から1時間でアプリ完成・公開</div>
+          </div>
+
+          <!-- Chat 5: 朝ブリーフィング -->
+          <div class="chat-content" data-chat="5" style="display:none;flex-direction:column;gap:.8rem">
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">☀️ おはようございます！<br>今日のブリーフィングです。<br><br>📅 <strong>本日の予定</strong><br>・10:00 投資家MTG（Zoom）<br>・14:00 クライアント訪問（渋谷）<br>・18:00 懇親会（六本木）<br><br>✅ <strong>タスク（期限今日）</strong><br>・事業計画書の最終版提出<br>・契約書の確認・返送<br><br>📧 <strong>重要メール</strong><br>・銀行から融資審査結果 → 要返信<br>・弁護士から契約書修正 → 確認済み<br><br>💡 投資家MTGの資料、昨日の修正反映済みです。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">助かる！銀行のメール返信のドラフト作って</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">ドラフト作ったよ 👇<br><br>件名: Re: 融資審査結果について<br><br>内容確認して、OKならそのまま送信するね。</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 毎朝8時に自動配信。聞かなくても届く。</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--text2);font-size:.9rem">※ 実際のやり取りを元に再構成しています</p>
+  </div>
+</section>
+
 <!-- Results -->
 <section class="results">
   <div class="container">
@@ -391,6 +470,20 @@ const obs = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
 }, {threshold: 0.1});
 document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// Chat tabs
+document.querySelectorAll('.chat-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const id = tab.dataset.chat;
+    document.querySelectorAll('.chat-tab').forEach(t => {
+      t.style.background = 'var(--bg3)'; t.style.color = 'var(--text2)'; t.style.border = '1px solid #333';
+    });
+    tab.style.background = 'var(--blue)'; tab.style.color = '#fff'; tab.style.border = 'none';
+    document.querySelectorAll('.chat-content').forEach(c => { c.style.display = 'none'; });
+    const target = document.querySelector('.chat-content[data-chat="'+id+'"]');
+    if(target) target.style.display = 'flex';
+  });
+});
 
 // FAQ toggle
 document.querySelectorAll('.faq-q').forEach(q => {
