@@ -3,31 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kai — 飲食店の最強の右腕</title>
-<meta name="description" content="飲食店オーナー向けAIアシスタント。SNS運用、メニュー作成、口コミ対応、求人、経理まで月額5万円で全部おまかせ。先着20店舗。">
-<meta property="og:title" content="Kai — 飲食店の最強の右腕。SNS・メニュー・求人、全部AIにおまかせ。">
-<meta property="og:description" content="月額10万円→モニター価格5万円。バイト1人の1/3以下で、24時間働くスタッフ。先着20店舗。">
+<title>Kai — エステサロンの最強の右腕</title>
+<meta name="description" content="エステサロンオーナー向けAIアシスタント。集客・SNS運用・予約管理・口コミ対応・求人・経理まで月額5万円で全部おまかせ。先着20店舗。">
+<meta property="og:title" content="Kai — エステサロンの最強の右腕。集客・SNS・予約管理、全部AIにおまかせ。">
+<meta property="og:description" content="月額10万円→モニター価格5万円。スタッフ1人の1/3以下で、24時間働くサロンアシスタント。先着20店舗。">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0a0a0a;--bg2:#111;--bg3:#1a1a1a;--text:#f0f0f0;--text2:#999;--blue:#2080E0;--gold:#FFD700;--gradient:linear-gradient(135deg,#2080E0,#60a0ff)}
+:root{--bg:#0a0a0a;--bg2:#111;--bg3:#1a1a1a;--text:#f0f0f0;--text2:#999;--blue:#c07ab8;--gold:#FFD700;--gradient:linear-gradient(135deg,#c07ab8,#e8a0d0)}
 html{scroll-behavior:smooth}
 body{font-family:'Noto Sans JP','Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
 a{color:var(--blue);text-decoration:none}
 .fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(32,128,224,.08) 0%,transparent 60%);animation:pulse 8s ease-in-out infinite}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(192,122,184,.1) 0%,transparent 60%);animation:pulse 8s ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
 .hero-content{position:relative;z-index:1;max-width:800px}
 .badge{display:inline-block;background:linear-gradient(135deg,var(--gold),#ffaa00);color:#000;font-weight:700;font-size:.85rem;padding:.4rem 1.2rem;border-radius:50px;margin-bottom:1.5rem;letter-spacing:.05em}
 .hero h1{font-size:clamp(2rem,6vw,3.5rem);font-weight:900;line-height:1.3;margin-bottom:1rem;background:linear-gradient(135deg,#fff,#ccc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero .sub{font-size:clamp(1rem,2.5vw,1.3rem);color:var(--text2);margin-bottom:2.5rem;line-height:1.8}
 .hero .sub strong{color:var(--text)}
-.cta-btn{display:inline-block;background:var(--gradient);color:#fff;font-weight:700;font-size:1.1rem;padding:1rem 3rem;border-radius:60px;transition:all .3s;box-shadow:0 4px 30px rgba(32,128,224,.4)}
-.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(32,128,224,.6)}
+.cta-btn{display:inline-block;background:var(--gradient);color:#fff;font-weight:700;font-size:1.1rem;padding:1rem 3rem;border-radius:60px;transition:all .3s;box-shadow:0 4px 30px rgba(192,122,184,.4)}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(192,122,184,.6)}
 section{padding:5rem 1.5rem}
 .container{max-width:1000px;margin:0 auto}
 .section-title{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:900;text-align:center;margin-bottom:.8rem}
@@ -39,8 +39,6 @@ section{padding:5rem 1.5rem}
 .problem-card{background:var(--bg3);border:1px solid #222;border-radius:16px;padding:2rem;text-align:center}
 .problem-card .icon{font-size:2.5rem;margin-bottom:1rem}
 .problem-card p{color:var(--text2);font-size:.95rem}
-.results-header{text-align:center;margin-bottom:1rem}
-.results-header .big-number{font-size:clamp(3rem,8vw,5rem);font-weight:900;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .category-label{font-size:.9rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin:2.5rem 0 1rem;padding-left:.5rem;border-left:3px solid var(--gold)}
 .result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
 .result-card{background:var(--bg2);border:1px solid #222;border-radius:12px;padding:1.5rem;transition:border-color .3s,transform .3s}
@@ -78,7 +76,7 @@ section{padding:5rem 1.5rem}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 1.5rem}
 .faq-item.open .faq-a{max-height:300px;padding:0 1.5rem 1.2rem}
 .faq-a p{font-size:.9rem;color:var(--text2);line-height:1.8}
-.final-cta{text-align:center;padding:6rem 1.5rem;background:radial-gradient(ellipse at center,rgba(32,128,224,.1) 0%,transparent 70%)}
+.final-cta{text-align:center;padding:6rem 1.5rem;background:radial-gradient(ellipse at center,rgba(192,122,184,.1) 0%,transparent 70%)}
 .final-cta h2{font-size:clamp(1.5rem,4vw,2.5rem);font-weight:900;margin-bottom:1rem}
 .final-cta p{color:var(--text2);margin-bottom:2rem;font-size:1.1rem}
 .slots{font-size:1.2rem;color:var(--gold);font-weight:700;margin-bottom:2rem}
@@ -90,12 +88,12 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <!-- Hero -->
 <section class="hero">
   <div class="hero-content fade-in">
-    <div class="badge">🍽 先着20店舗 モニター価格 50%OFF</div>
-    <h1>料理に集中してください。<br>残りは、全部やります。</h1>
+    <div class="badge">✨ 先着20サロン モニター価格 50%OFF</div>
+    <h1>施術に集中してください。<br>集客も経営も、全部やります。</h1>
     <p class="sub">
-      SNS投稿、メニュー作成、口コミ対応、求人、経理…<br>
-      <strong>飲食店の雑務</strong>を、<strong>AI + 経営のプロ</strong>が<strong>月5万円</strong>で全部引き受けます。<br>
-      <strong>バイト1人の1/3以下</strong>で、<strong>24時間働くスタッフ</strong>が手に入ります。
+      SNS投稿、予約フォロー、口コミ対応、求人、経理…<br>
+      <strong>サロン経営の雑務</strong>を、<strong>AI + 経営のプロ</strong>が<strong>月5万円</strong>で全部引き受けます。<br>
+      <strong>スタッフ1人の1/3以下</strong>で、<strong>24時間働くサロンアシスタント</strong>。
     </p>
     <a href="https://t.me/kenken" class="cta-btn">無料相談する →</a>
   </div>
@@ -105,14 +103,14 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="problems">
   <div class="container">
     <h2 class="section-title fade-in">こんな悩み、ありませんか？</h2>
-    <p class="section-sub fade-in">忙しい飲食店オーナーが本業（料理）に集中できない理由</p>
+    <p class="section-sub fade-in">施術が忙しくて、経営業務に手が回らない</p>
     <div class="problem-grid">
-      <div class="problem-card fade-in"><div class="icon">📸</div><p>SNSの更新が<br>止まっている</p></div>
-      <div class="problem-card fade-in"><div class="icon">📋</div><p>メニューやPOPを<br>作る時間がない</p></div>
+      <div class="problem-card fade-in"><div class="icon">📸</div><p>SNS・ビフォーアフターの<br>投稿が続かない</p></div>
+      <div class="problem-card fade-in"><div class="icon">📱</div><p>ホットペッパーの<br>更新が後回し</p></div>
       <div class="problem-card fade-in"><div class="icon">⭐</div><p>Googleの口コミに<br>返信できていない</p></div>
-      <div class="problem-card fade-in"><div class="icon">👥</div><p>求人しても<br>人が来ない</p></div>
+      <div class="problem-card fade-in"><div class="icon">👥</div><p>スタッフが採用<br>できない</p></div>
+      <div class="problem-card fade-in"><div class="icon">💸</div><p>リピート率が<br>上がらない</p></div>
       <div class="problem-card fade-in"><div class="icon">🧾</div><p>経理・確定申告が<br>面倒すぎる</p></div>
-      <div class="problem-card fade-in"><div class="icon">🌏</div><p>インバウンド客に<br>対応できない</p></div>
     </div>
   </div>
 </section>
@@ -121,7 +119,7 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section style="padding:5rem 1.5rem">
   <div class="container">
     <h2 class="section-title fade-in">ただのAIツールとは、<span class="gold">決定的に</span>違う。</h2>
-    <p class="section-sub fade-in">ChatGPTは便利。でも「飲食店のことがわかる人間」が使いこなすから結果が出る。</p>
+    <p class="section-sub fade-in">ChatGPTは便利。でも「サロン経営がわかる人間」が使いこなすから結果が出る。</p>
 
     <div style="display:flex;flex-direction:column;gap:1.5rem;max-width:600px;margin:0 auto">
       <div class="fade-in" style="background:var(--bg2);border:1px solid #222;border-radius:16px;padding:2rem;position:relative;overflow:hidden">
@@ -131,8 +129,8 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem">
           <li style="font-size:.9rem;color:var(--text)">⚡ 17事業を立ち上げた<strong>経営判断力</strong></li>
           <li style="font-size:.9rem;color:var(--text)">⚡ NFT+株式で<strong>10億円調達</strong>の実績</li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ 集客・マーケ・経営の<strong>実戦経験</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのお店に合わせた<strong>戦略的助言</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 集客・リピート設計・経営の<strong>実戦経験</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのサロンに合わせた<strong>戦略的助言</strong></li>
         </ul>
       </div>
       <div style="text-align:center;font-size:1.5rem;color:var(--gold)">×</div>
@@ -141,14 +139,14 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
         <div style="font-size:1.2rem;margin-bottom:.5rem">🤖 <strong>Kai</strong>（AI参謀）</div>
         <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">最新AI搭載 / 24時間稼働</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem">
-          <li style="font-size:.9rem;color:var(--text)">⚡ SNS投稿文・メニュー・POPを<strong>秒速で作成</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ SNS投稿文・キャンペーン企画を<strong>秒速で作成</strong></li>
           <li style="font-size:.9rem;color:var(--text)">⚡ 口コミ返信・求人文面を<strong>即生成</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ 売上分析・原価計算を<strong>自動化</strong></li>
-          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのお店を学習し<strong>日々進化</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ 売上分析・リピート率改善を<strong>自動化</strong></li>
+          <li style="font-size:.9rem;color:var(--text)">⚡ あなたのサロンを学習し<strong>日々進化</strong></li>
         </ul>
       </div>
     </div>
-    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--gold);font-weight:700;font-size:1.1rem">人間の判断力 × AIの実行力 = 飲食店の最強の右腕</p>
+    <p class="fade-in" style="text-align:center;margin-top:2rem;color:var(--gold);font-weight:700;font-size:1.1rem">人間の判断力 × AIの実行力 = サロン経営の最強の右腕</p>
   </div>
 </section>
 
@@ -159,62 +157,61 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
     <p class="section-sub fade-in">LINEのように話しかけるだけ。こんな感じで動きます。</p>
 
     <div style="display:flex;gap:.5rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap" class="fade-in">
-      <button class="chat-tab active" data-chat="1" style="background:var(--blue);color:#fff;border:none;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📸 SNS運用</button>
-      <button class="chat-tab" data-chat="2" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📋 メニュー作成</button>
+      <button class="chat-tab active" data-chat="1" style="background:var(--blue);color:#fff;border:none;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">📸 SNS集客</button>
+      <button class="chat-tab" data-chat="2" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🔄 リピート施策</button>
       <button class="chat-tab" data-chat="3" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">⭐ 口コミ対応</button>
       <button class="chat-tab" data-chat="4" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">👥 求人</button>
-      <button class="chat-tab" data-chat="5" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🌏 多言語</button>
+      <button class="chat-tab" data-chat="5" style="background:var(--bg3);color:var(--text2);border:1px solid #333;padding:.6rem 1.2rem;border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:600">🎁 キャンペーン</button>
     </div>
 
     <div style="max-width:500px;margin:0 auto">
       <div class="chat-phone fade-in" style="background:#0e1621;border-radius:20px;padding:0;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)">
         <div style="background:#17212b;padding:1rem 1.2rem;display:flex;align-items:center;gap:.8rem;border-bottom:1px solid #1e2c3a">
-          <div style="width:40px;height:40px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:1.2rem">⚡</div>
-          <div><div style="font-weight:600;font-size:.9rem">Kai × あなたのお店</div><div style="font-size:.75rem;color:#6d8da6">オンライン</div></div>
+          <div style="width:40px;height:40px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:1.2rem">✨</div>
+          <div><div style="font-weight:600;font-size:.9rem">Kai × あなたのサロン</div><div style="font-size:.75rem;color:#6d8da6">オンライン</div></div>
         </div>
 
         <div style="padding:1rem;min-height:380px">
 
           <!-- Chat 1: SNS -->
           <div class="chat-content" data-chat="1" style="display:flex;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">今日のランチの写真送るから、インスタ用の投稿文作って🍝</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">📷 [パスタの写真]</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">美味しそう！⚡ 投稿文3パターン作ったよ👇<br><br>①「もちもち生パスタ×濃厚トマトソース🍅 シェフが毎朝手打ちしてます。ランチ限定980円」<br><br>②「今日のランチはこれ！手打ちパスタの贅沢トマトソース。テラス席で召し上がれ☀️」<br><br>③「【本日のおすすめ】生パスタ好きに届け。もちもち食感がたまらない一皿🍝」<br><br>#渋谷ランチ #パスタ #手打ちパスタ #渋谷グルメ #ランチ限定</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">①でお願い！</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">今日のお客様のビフォーアフター写真送るから、インスタの投稿文作って✨</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">📷 [ビフォーアフター写真]</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">すごい変化！✨ 投稿文3パターン作ったよ👇<br><br>①「✨ たった60分でこの変化 ✨ 小顔コルギで−2cm！お客様も鏡を見て思わず笑顔に😊 初回限定50%OFF」<br><br>②「【Before→After】フェイスラインがスッキリ✨ むくみが気になる方、ぜひ一度お試しください🌿」<br><br>③「お客様の変化が私たちの喜び💕 小顔コルギ60分コース。驚きの結果をご覧ください」<br><br>#エステ #小顔 #コルギ #ビフォーアフター #渋谷エステ #フェイシャル</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">①で！ストーリーズ用も欲しい</div>
             <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 写真送って1分で投稿文完成</div>
           </div>
 
-          <!-- Chat 2: Menu -->
+          <!-- Chat 2: Repeat -->
           <div class="chat-content" data-chat="2" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">来週から夏メニュー始めるんだけど、POPのテキスト考えて。冷製パスタと夏野菜カレー</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">夏メニュー、いいね！⚡<br><br>🍝 冷製パスタ用POP：<br>「ひんやり、つるっと。<br>トマトとバジルの冷製パスタ<br>暑い日にぴったりの一皿。 ¥1,100」<br><br>🍛 夏野菜カレー用POP：<br>「ゴロッと夏野菜。<br>スパイス香る、元気が出るカレー<br>ナス・ズッキーニ・パプリカ ¥1,000」<br><br>A4サイズのデザインデータも作る？印刷してすぐ使えるようにするよ。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">デザインも頼む！</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ メニューPOP テキスト+デザインまで対応</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">最近リピート率下がってる気がする…何か対策ない？</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">分析してみるね ⚡<br><br>リピート率UPの即効施策👇<br><br>①【次回予約促進】施術後に次回予約で10%OFF<br>→ 「今日の肌の状態だと、3週間後がベスト」と具体的に提案<br><br>②【サンクスDM】施術翌日にお礼+ホームケアアドバイスをLINEで自動送信<br><br>③【離脱防止】60日来店なしのお客様に限定クーポン自動送付<br><br>④【回数券】5回コースで1回無料（LTV向上）<br><br>①②のDMテンプレ、今すぐ作る？</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">全部やって！🙏</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 課題分析→具体策→テンプレまで5分</div>
           </div>
 
           <!-- Chat 3: Reviews -->
           <div class="chat-content" data-chat="3" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">Googleに口コミ入ってた。「味は美味しいけど待ち時間が長い」って。返信文考えて</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ 誠実に対応する返信作ったよ👇<br><br>「この度はご来店ありがとうございます。お料理を気に入っていただけたとのこと、大変嬉しく思います。<br><br>お待たせしてしまった点、大変申し訳ございませんでした。現在、ピーク時間帯のオペレーション改善に取り組んでおります。<br><br>次回はよりスムーズにご案内できるよう努めますので、またのご来店をお待ちしております。」<br><br>これでOK？修正あれば言ってね。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">完璧👏 そのまま貼る！</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 口コミ対応、30秒で返信文完成</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">Googleに口コミ入ったけど「勧誘がしつこい」って書かれた😭 返信どうしよう</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">落ち着いて、誠実な返信作るね ⚡<br><br>「この度はご来店いただきありがとうございます。<br><br>ご不快な思いをさせてしまい、大変申し訳ございませんでした。お客様のお気持ちを最優先に考えるべきところ、配慮が不足しておりました。<br><br>スタッフ一同、カウンセリングの在り方を見直し、お客様が安心して施術を受けていただける環境づくりに努めてまいります。<br><br>貴重なご意見をいただき感謝いたします。」<br><br>これでOK？あと、スタッフ向けのカウンセリング改善マニュアルも作れるよ。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">マニュアルもお願い！</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 危機対応→改善策まで一気に対応</div>
           </div>
 
           <!-- Chat 4: Hiring -->
           <div class="chat-content" data-chat="4" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">キッチンスタッフ1人募集したい。求人サイトに出す文章考えて</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ お店の特徴に合わせて作ったよ👇<br><br>━━━━━━━━━━━<br>【キッチンスタッフ募集】<br>渋谷の人気イタリアン🍕<br>━━━━━━━━━━━<br><br>✅ 未経験OK・丁寧に教えます<br>✅ まかない無料（スタッフに大好評！）<br>✅ シフト柔軟・週2日〜OK<br>✅ 駅チカ徒歩3分<br><br>時給: 1,200円〜（経験者優遇）<br>時間: 11:00-15:00 / 17:00-22:00<br><br>「料理が好き」その気持ちだけで十分です。<br>一緒に美味しいを届けませんか？<br>━━━━━━━━━━━<br><br>タウンワーク・バイトル両方に使える形にしたよ。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">ありがとう！面接の質問リストも欲しい</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 求人文面+面接準備まで一気に対応</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">エステティシャン1人募集したい。リジョブに出す文章考えて</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">了解 ⚡ サロンの魅力を活かして作ったよ👇<br><br>━━━━━━━━━━━<br>【エステティシャン募集】<br>渋谷の人気プライベートサロン✨<br>━━━━━━━━━━━<br><br>✅ 未経験OK・研修制度充実<br>✅ 完全予約制でゆったり施術<br>✅ ノルマなし・技術に集中できる環境<br>✅ 社保完備・月8日休み<br>✅ 駅チカ徒歩2分<br><br>月給: 25万円〜（経験者優遇）<br><br>「お客様を笑顔にしたい」<br>その想いがあれば十分です💕<br>━━━━━━━━━━━<br><br>リジョブ・indeed両方に使える形にしたよ。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">完璧！ありがとう✨</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ サロン求人に特化した文面を即作成</div>
           </div>
 
-          <!-- Chat 5: Multi-language -->
+          <!-- Chat 5: Campaign -->
           <div class="chat-content" data-chat="5" style="display:none;flex-direction:column;gap:.8rem">
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">最近外国人のお客さん増えてきた。英語と中国語のメニュー作れる？</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">もちろん！⚡ 今のメニュー教えてくれたら翻訳するよ。<br><br>ただの直訳じゃなくて：<br>・料理の魅力が伝わる説明文つき<br>・アレルギー表記も追加<br>・写真番号で指差し注文もできる形式<br><br>PDF納品するから、印刷してすぐ使えるよ。</div>
-            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">メニュー写真送る！韓国語もいける？</div>
-            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">韓国語も対応できるよ 🇰🇷<br>英・中・韓の3言語メニュー、明日には納品するね。</div>
-            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 多言語メニュー、翌日納品</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">来月の母の日キャンペーン何かやりたいんだけど、アイデアある？</div>
+            <div style="align-self:flex-start;background:#182533;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 14px 4px;max-width:80%;font-size:.85rem">母の日、最高のタイミング！✨<br><br>🎁 キャンペーン案3つ👇<br><br>①【ペアチケット】母娘で来店→2人目半額<br>→ 新規+既存で客単価UP<br><br>②【ギフトカード】施術ギフト券をオンライン販売<br>→ 来店しなくても売上発生<br><br>③【SNSコンテスト】お母さんとの写真投稿でペア施術プレゼント<br>→ UGCで認知拡大<br><br>おすすめは①+②の組み合わせ。<br>告知用のインスタ投稿、ストーリーズ、LINE配信文、全部作るよ。</div>
+            <div style="align-self:flex-end;background:#2b5278;color:#fff;padding:.7rem 1rem;border-radius:14px 14px 4px 14px;max-width:80%;font-size:.85rem">①②やる！全部お願い🙏</div>
+            <div style="text-align:center;color:#6d8da6;font-size:.7rem;margin-top:.5rem">↑ 企画→告知素材まで一括対応</div>
           </div>
 
         </div>
@@ -227,33 +224,33 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <!-- Results -->
 <section class="results">
   <div class="container">
-    <div class="results-header fade-in">
-      <h2 class="section-title">飲食店で、<span class="gold">こんなこと</span>ができます</h2>
+    <div class="fade-in">
+      <h2 class="section-title">エステサロンで、<span class="gold">こんなこと</span>ができます</h2>
       <p class="section-sub">話しかけるだけで、すぐに実行</p>
     </div>
 
     <div class="category-label fade-in">📣 集客・SNS</div>
     <div class="result-grid">
-      <div class="result-card fade-in"><div class="emoji">📸</div><h4>インスタ投稿文作成</h4><p>写真を送るだけ。キャプション+ハッシュタグを3パターン提案。</p></div>
-      <div class="result-card fade-in"><div class="emoji">📍</div><h4>Googleマップ対策（MEO）</h4><p>口コミ返信、ビジネスプロフィール投稿文、写真選定のアドバイス。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🎫</div><h4>クーポン・キャンペーン企画</h4><p>雨の日クーポン、リピーター特典、季節イベントの企画立案。</p></div>
-      <div class="result-card fade-in"><div class="emoji">📝</div><h4>食べログ・ホットペッパー文面</h4><p>店舗紹介文、メニュー説明、口コミへの返信を作成。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📸</div><h4>インスタ投稿・ストーリーズ作成</h4><p>ビフォーアフター写真を送るだけ。キャプション+ハッシュタグ+ストーリーズ文面。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📍</div><h4>Googleマップ・MEO対策</h4><p>口コミ返信、ビジネスプロフィール最適化、写真選定アドバイス。</p></div>
+      <div class="result-card fade-in"><div class="emoji">💆</div><h4>ホットペッパービューティー最適化</h4><p>メニュー説明文、クーポン設計、ブログ記事の作成。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🎁</div><h4>キャンペーン・イベント企画</h4><p>季節イベント、紹介キャンペーン、SNSコンテスト企画。</p></div>
     </div>
 
-    <div class="category-label fade-in">🛠 業務効率化</div>
+    <div class="category-label fade-in">🔄 リピート・顧客管理</div>
     <div class="result-grid">
-      <div class="result-card fade-in"><div class="emoji">📱</div><h4>シフト管理アプリ</h4><p>スタッフがスマホでシフト提出。自動で最適シフト生成。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🎨</div><h4>メニュー・POP作成</h4><p>季節メニュー、日替わり、おすすめPOP。印刷対応データで納品。</p></div>
-      <div class="result-card fade-in"><div class="emoji">📦</div><h4>在庫・仕入れ管理</h4><p>発注リスト作成、仕入れ先比較、ロス率の分析。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🌏</div><h4>多言語メニュー</h4><p>英語・中国語・韓国語。料理説明+アレルギー表記つき。</p></div>
+      <div class="result-card fade-in"><div class="emoji">💌</div><h4>サンクスDM・フォローメッセージ</h4><p>施術後のお礼+ホームケアアドバイス。LINE・DMテンプレ作成。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📊</div><h4>リピート率分析・改善</h4><p>離脱顧客の分析、再来店促進クーポン、回数券設計。</p></div>
+      <div class="result-card fade-in"><div class="emoji">📋</div><h4>カウンセリングシート設計</h4><p>カルテ・問診票・同意書のテンプレ作成。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🎫</div><h4>回数券・コース設計</h4><p>客単価UP・LTV最大化のための料金プラン提案。</p></div>
     </div>
 
-    <div class="category-label fade-in">📊 経営サポート</div>
+    <div class="category-label fade-in">📈 経営サポート</div>
     <div class="result-grid">
-      <div class="result-card fade-in"><div class="emoji">📈</div><h4>売上分析・レポート</h4><p>日次/月次の売上推移、客単価分析、曜日別トレンド。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🧮</div><h4>原価計算・FL比率管理</h4><p>メニュー別原価率、食材費の最適化提案。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🧾</div><h4>経理・確定申告準備</h4><p>レシート整理のテンプレ、経費分類、税理士連携サポート。</p></div>
-      <div class="result-card fade-in"><div class="emoji">🏪</div><h4>出店・事業計画</h4><p>2号店の立地調査、損益シミュレーション、融資資料作成。</p></div>
+      <div class="result-card fade-in"><div class="emoji">💰</div><h4>売上分析・KPIレポート</h4><p>日次/月次売上、客単価、稼働率、リピート率を可視化。</p></div>
+      <div class="result-card fade-in"><div class="emoji">👥</div><h4>求人・採用支援</h4><p>リジョブ・indeed用の求人文面、面接質問リスト、研修マニュアル。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🧾</div><h4>経理・確定申告準備</h4><p>経費整理テンプレ、帳簿管理、税理士連携サポート。</p></div>
+      <div class="result-card fade-in"><div class="emoji">🏪</div><h4>出店・拡大計画</h4><p>2号店の立地調査、損益シミュレーション、融資資料作成。</p></div>
     </div>
   </div>
 </section>
@@ -262,16 +259,16 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="service">
   <div class="container">
     <h2 class="section-title fade-in">Kaiにおまかせできること</h2>
-    <p class="section-sub fade-in">飲食店に特化した8つのサポート</p>
+    <p class="section-sub fade-in">エステサロンに特化した8つのサポート</p>
     <div class="service-list">
-      <div class="service-item fade-in"><div class="icon">📸</div><div><h4>SNS運用・投稿代行</h4><p>Instagram、TikTok、X。写真を送るだけで投稿文+ハッシュタグ完成。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">📍</div><div><h4>Googleマップ・口コミ対策</h4><p>口コミ返信、MEO対策、ビジネスプロフィール最適化で集客UP。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🎨</div><div><h4>メニュー・POP・チラシ作成</h4><p>季節メニュー、日替わり、宴会プラン。デザインデータで納品。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">👥</div><div><h4>求人・採用サポート</h4><p>求人広告文面、面接質問リスト、採用基準の設計。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🌏</div><div><h4>多言語メニュー対応</h4><p>英語・中国語・韓国語。インバウンド客の売上を取りこぼさない。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📸</div><div><h4>SNS運用・投稿代行</h4><p>Instagram、TikTok、LINE公式。ビフォーアフター投稿も美しく。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">📍</div><div><h4>Googleマップ・口コミ対策</h4><p>口コミ返信、MEO対策で地域検索1位を狙う。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">💆</div><div><h4>ホットペッパー最適化</h4><p>メニュー文面、クーポン設計、ブログ更新で予約数UP。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🔄</div><div><h4>リピート率改善</h4><p>フォローDM、離脱防止、回数券設計で顧客を逃さない。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">👥</div><div><h4>求人・採用サポート</h4><p>求人文面、面接設計、スタッフ研修マニュアル作成。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🎁</div><div><h4>キャンペーン企画</h4><p>季節イベント、紹介制度、SNSコンテスト。企画から告知素材まで。</p></div></div>
       <div class="service-item fade-in"><div class="icon">🧾</div><div><h4>経理・確定申告サポート</h4><p>経費整理、帳簿テンプレ、税理士との連携サポート。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">📈</div><div><h4>売上分析・原価管理</h4><p>売上レポート、原価率計算、利益改善の提案。</p></div></div>
-      <div class="service-item fade-in"><div class="icon">🤖</div><div><h4>アプリ・システム開発</h4><p>予約システム、シフト管理アプリ、LINE公式連携。</p></div></div>
+      <div class="service-item fade-in"><div class="icon">🤖</div><div><h4>予約・システム開発</h4><p>LINE予約システム、顧客管理アプリ、自動リマインド。</p></div></div>
     </div>
     <p style="text-align:center;color:var(--text2);font-size:.9rem" class="fade-in">※ 専用チャットグループ（あなた + 小松 + Kai）で24時間対応<br>小松が戦略を判断し、Kaiが即座に実行。このコンビが強い。</p>
   </div>
@@ -281,17 +278,17 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <section class="pricing">
   <div class="container">
     <h2 class="section-title fade-in">料金</h2>
-    <p class="section-sub fade-in"><span class="gold">バイト1人の1/3以下</span>で、24時間働くスタッフ</p>
+    <p class="section-sub fade-in"><span class="gold">スタッフ1人の1/3以下</span>で、24時間働くサロンアシスタント</p>
     <div class="pricing-card fade-in">
-      <div class="limit-badge">🍽 先着20店舗 モニター価格</div>
+      <div class="limit-badge">✨ 先着20サロン モニター価格</div>
       <p style="font-size:1.2rem;color:var(--text2);text-decoration:line-through;margin-bottom:.3rem">通常価格 ¥100,000/月</p>
       <div class="price" style="color:var(--gold)">¥50,000<span>/月</span></div>
       <p class="tax">税込 ¥55,000（50%OFF）</p>
       <div class="compare">
-        <div class="compare-row old">アルバイト1人 — 月15〜25万円</div>
+        <div class="compare-row old">受付スタッフ1人 — 月20〜30万円</div>
         <div class="compare-row old">SNS代行会社 — 月10〜30万円</div>
-        <div class="compare-row old">コンサル — 月20〜50万円</div>
-        <div class="compare-row highlight">Kai — <s>月額10万円</s> → モニター価格 月額5万円 ⚡</div>
+        <div class="compare-row old">集客コンサル — 月20〜50万円</div>
+        <div class="compare-row highlight">Kai — <s>月額10万円</s> → モニター価格 月額5万円 ✨</div>
       </div>
       <a href="https://t.me/kenken" class="cta-btn" style="width:100%;text-align:center">無料相談する →</a>
     </div>
@@ -306,7 +303,7 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
     <div class="flow-steps">
       <div class="flow-step fade-in">
         <div class="num">1</div>
-        <div class="content"><h4>無料相談</h4><p>お店の課題をヒアリング。「こんなことできる？」何でも聞いてください。</p></div>
+        <div class="content"><h4>無料相談</h4><p>サロンの課題をヒアリング。「こんなことできる？」何でも聞いてください。</p></div>
       </div>
       <div class="flow-step fade-in">
         <div class="num">2</div>
@@ -330,20 +327,20 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
         <div class="faq-a"><p>はい、LINEのようにメッセージを送るだけです。「インスタの投稿文作って」「求人の文章考えて」と話しかけるだけ。スマホが使える方なら誰でもOKです。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">どのSNSに対応していますか？</div>
-        <div class="faq-a"><p>Instagram、TikTok、X（旧Twitter）、LINE公式、Facebook、Googleビジネスプロフィールなど主要SNS全てに対応しています。</p></div>
+        <div class="faq-q">ホットペッパービューティーにも対応していますか？</div>
+        <div class="faq-a"><p>はい、ホットペッパービューティーのメニュー文面、クーポン設計、ブログ記事、口コミ返信に全て対応しています。Instagram、LINE公式、Googleビジネスプロフィールなど主要媒体は全てカバーします。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">料理の写真撮影もしてくれますか？</div>
-        <div class="faq-a"><p>撮影自体はお店でお願いしますが、「どう撮れば映えるか」のアドバイスは可能です。撮った写真を送っていただければ、投稿文やPOPへの加工は全て対応します。</p></div>
+        <div class="faq-q">施術写真の撮り方も教えてもらえますか？</div>
+        <div class="faq-a"><p>はい、ビフォーアフター写真の撮影角度、ライティング、構図のアドバイスが可能です。「映える写真」のコツをお伝えします。撮った写真を送っていただければ、投稿素材への加工は全て対応します。</p></div>
       </div>
       <div class="faq-item fade-in">
         <div class="faq-q">複数店舗でも使えますか？</div>
-        <div class="faq-a"><p>はい、対応可能です。店舗ごとに別の相談もできます。2店舗目以降は割引プランもご用意しています。</p></div>
+        <div class="faq-a"><p>はい、対応可能です。店舗ごとのSNS運用や売上分析もできます。2店舗目以降は割引プランもご用意しています。</p></div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">食品衛生や法律関連も相談できますか？</div>
-        <div class="faq-a"><p>食品衛生法の基本的な確認、営業許可の種類、アレルギー表示の義務など、一般的な法務チェックは可能です。専門的な判断が必要な場合は、適切な専門家をご紹介します。</p></div>
+        <div class="faq-q">エステの法律や広告規制も相談できますか？</div>
+        <div class="faq-a"><p>景品表示法・薬機法に関わる広告表現のチェック、特定商取引法に基づくクーリングオフ対応など、サロン運営に関わる法務チェックが可能です。専門的な判断が必要な場合は、適切な専門家をご紹介します。</p></div>
       </div>
       <div class="faq-item fade-in">
         <div class="faq-q">解約はいつでもできますか？</div>
@@ -356,8 +353,8 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.8rem;border-top:1px 
 <!-- Final CTA -->
 <section class="final-cta">
   <div class="container fade-in">
-    <h2>まずは<span class="accent">1店舗</span>で<br>試してみませんか？</h2>
-    <div class="slots">モニター枠 残り: <span id="slots">20</span>店舗 / 20店舗</div>
+    <h2>まずは<span class="accent">1サロン</span>で<br>試してみませんか？</h2>
+    <div class="slots">モニター枠 残り: <span id="slots">20</span>サロン / 20サロン</div>
     <p>1ヶ月単位の契約。いつでも解約OK、縛りなし。</p>
     <a href="https://t.me/kenken" class="cta-btn" style="font-size:1.2rem;padding:1.2rem 3.5rem">無料相談する →</a>
   </div>
